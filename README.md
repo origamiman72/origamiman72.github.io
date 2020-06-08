@@ -1,2 +1,2 @@
-# origamiman72.github.io
-Personal Website
+# website
+My personal website

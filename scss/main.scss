@@ -1,0 +1,494 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  $background: rgb(31, 32, 65);
+  $accent: rgb(244, 157, 55);
+  
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  
+  body {
+    background: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  h2, h3 {
+    font-family: 'Fjalla One', sans-serif;
+  }
+  
+  /* Landing Page */
+  
+  .topPage {
+    color: white;
+    align-items: center;
+    background-size: cover;
+    background-color: $background;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: large;
+    display: block;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  #landing {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #landingText {
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .orange {
+    color: $accent;
+    font-size: 1.2em;
+    margin-left: .6%;
+  }
+  
+  .large {
+    font-size: 1em;
+    margin-left: .9%;
+  }
+  
+  #landingText .btn {
+    color: white;
+    background: transparent;
+    box-shadow: transparent;
+    text-decoration: None;
+    border: white solid 2px;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: medium;
+    font-family: 'Fjalla One', sans-serif;
+    transition: ease .4s all;
+    outline: none;
+  
+    &:hover {
+      border: $accent solid 2px;
+      background: $accent;
+      cursor: pointer;
+    }
+  }
+  
+  /* Header */
+  
+  header {
+    z-index: 10;
+    position: sticky;
+    color: white;
+    width: 100%;
+    margin: 0;
+  
+    /* background: black; */
+    background: $background;
+    padding: 20px 0;
+    border-bottom: solid rgb(39,40,72) 2px;
+    border-top: solid rgb(39,40,72) 2px;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    transition: .3s ease all;
+  }
+  
+  .fixed {
+    position: sticky;
+    top: 0;
+    left: 0;
+    // box-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+  
+  header nav {
+    display: flex;
+    font-size: 18px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      transition: .2s;
+    }
+  
+    ul {
+      list-style-type: none;
+      margin: auto;
+  
+      li {
+        display: inline-block;
+        padding: 0 15px;
+      }
+
+    .active > a {
+      color: $accent !important;
+      transition: .2s;
+    }
+
+    }
+  }
+  
+  
+  header h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+  
+  /* Body */
+  
+  /* Software */
+  
+  .container {
+    background: $background;
+    display: flex;
+    flex-flow: column;
+    padding: 0px;
+  }
+  
+  .sectionTitle {
+    &::before {
+      background: transparent;
+      content: '.';
+      font-size: medium;
+      color: transparent;
+    }
+
+    padding-left: .7em;
+  
+    text-align: left;
+    font-size: x-large;
+
+    h1 {
+      font-family: "Fjalla One", sans-serif;
+    }
+  }
+  
+  .center {
+    margin: auto;
+    padding: 40px;
+    max-width: 68em;
+    border-bottom: rgb(39,40,72) solid 2px;
+  }
+  #software {
+    color: white;
+
+    h2 {
+      font-family: 'Fjalla One', sans-serif;
+      font-size: xx-large;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  
+    .project {
+      background: $background;
+      max-width: 30em;
+      display: flex;
+      flex-flow: column nowrap;
+      font-family: 'Open Sans', sans-serif;
+      // padding-bottom: 3em;
+      margin-bottom: 2em;
+      padding: 1.5em;
+      border: transparent solid 1px;
+      border-radius: 10px;
+      transition: .25s ease;
+
+      &:hover {
+        box-shadow: 0 7px 7px black;
+        border: white solid 1px;
+        transform: translateY(-2%);
+      }
+
+      figure {
+        height: 5em;
+        padding: 1em 0;
+        margin: 0;
+      }
+
+      .lang {
+        opacity: 50%;
+        font-family: 'Fjalla One', sans-serif;
+      }
+
+    }
+  
+  }
+
+  
+  .typewriter {
+    // padding-top: 2.2em;
+    display: inline-block;
+    // margin-right: 4%;
+    // margin-left: 4%;
+    // margin-top: 4.5%;
+  }
+  
+  .typewriter-text {
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    letter-spacing: .2px;
+    white-space: nowrap;
+    font-size: 1.2em;
+    box-sizing: border-box;
+  
+    /* animation: blink .75s step-end infinite; */
+  }
+  
+  .cursor::after {
+    content: '';
+    display: inline-block;
+    margin-left: 3px;
+    background-color: $accent;
+    height: 1em;
+    width: .4em;
+  }
+
+  .active .cursor::after {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+  
+    49% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .bubbles {
+    // margin: auto;
+    // margin-top: 2em;
+    // margin-right: 8em;
+    // margin-left: 5em;
+    width: 4.3em;
+    margin-left: 1em;
+    display: flex;
+    transform: scale(.9);
+  
+    /* border: rgb(255, 255, 255) 4px solid; */
+    background: $accent;
+    align-items: center;
+    padding: 1em;
+    border-radius: 2em;
+    transition: .4s ease;
+  
+    &::before {
+      content: '.';
+      width: 1em;
+      height: 1em;
+      color: transparent;
+      background: $accent;
+      position: absolute;
+      text-anchor: start;
+      margin-top: 2.6em;
+      margin-left: -1.7em;
+      border-radius: 50%;
+    }
+  }
+  
+  .bubble {
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: .25em;
+    animation: none;
+  }
+  
+  .active .bubbles {
+    transform: scale(1);
+  
+  }
+    
+  .active .bubble {
+    -webkit-animation: in-and-out-bubbles 1.20s infinite ease-in-out;
+    animation: in-and-out-bubbles 1.20s infinite ease-in-out;
+  }
+
+  .active .bubble1 {
+    -webkit-animation-delay: -0.35s;
+    animation-delay: -0.35s;
+  }
+
+  .active .bubble2 {
+    -webkit-animation-delay: -0.20s;
+    animation-delay: -0.20s;
+  }
+  
+  .bubble3 {
+    margin-right: 0;
+  }
+  
+  .bubble1 {
+    margin-left: 0;
+  }
+  
+  @keyframes in-and-out-bubbles {
+    0%,80%,100% {
+      transform: scale(0);
+    }
+  
+    20% {
+      transform: scale(1);
+    }
+  }
+  
+  @-webkit-keyframes in-and-out-bubbles {
+    0%,80%,100% {
+      -webkit-transform: scale(0);
+    }
+  
+    20% {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  #towerBuilder {
+    .rect {
+      width: 3em;
+      height: 2.5em;
+      border-radius: 7px;
+      background: $accent;
+      position: absolute;
+      display: flex;
+      flex-flow: row nowrap;
+
+      // .window {
+      //   background: white;
+      //   height: 1em;
+      //   width: .7em;
+      //   margin: auto;
+      //   margin-top: .5em;
+
+      //   &:before {
+      //     background: white;
+      //     height: 1em;
+      //     content: '';
+      //     width: .5em;
+      //     margin-top: 1em;
+      //   }
+      // }
+    }
+
+    #rect1 {
+      margin-top: 2.5em;
+    }
+
+
+    #rect2 {
+      // animation: 5s rect2 infinite ease;
+      margin-left: 1em;
+    }
+
+    #rect3 {
+      height: 5em;
+      background: transparent;
+      // animation: 5s rect3 infinite ease;
+    }
+
+    @keyframes rect2 { 
+      0% {margin-left: 1em}
+      18% {margin-left: -1em}
+      35% {margin-left: 1em}
+      53% {margin-left: -1em}
+      70% {margin-left: 0em; border-radius: 7px;}
+      75% {background: $accent}
+      88% {background: white; border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+      100% {background: $accent; margin-left: 0em; border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+      // 58% {background: transparent; height: 2.5em}
+      // 79% {background: transparent}
+      // 80% {background: $accent; height: 0;}
+      // 90% {height: 2.5em; margin-left: 0em;}
+      // 100% {margin-left: 1em;}
+    }
+
+    @keyframes rect3 {
+      49% {background: transparent}
+      50% {background: white}
+      57% {background: $accent}
+      60% {height: 5em; margin-top: 0em}
+      70% {height: 2.5em; margin-top: 2.5em;}
+      80% {background: $accent;}
+      90% {background: transparent; height: 2.5em; margin-top: 2.5em;}
+    }
+
+    @keyframes rect1 {
+      0%, 70% {border-radius: 7px}
+      75% {background: $accent}
+      88% {background: white; border-top-left-radius: 0px; border-top-right-radius: 0px;}
+      100% {background: $accent; border-top-left-radius: 0; border-top-right-radius: 0;}
+      // 58% {background: transparent}
+      // 80% {background: transparent}
+      // 81% {background: $accent}
+    }
+
+  }
+
+    .active #rect1 {
+      animation: 3s rect1 infinite ease;
+    }
+
+    .active #rect2 {
+      animation: 3s rect2 infinite ease;
+    }
+
+    .active #rect3 {
+      // animation: 5s rect3 infinite ease;
+    }
+  
+  /* Experience */
+  
+  #experience {
+    // background: rgb(53, 55, 114);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+  
+    h3 {
+      color: rgb(166, 167, 194);
+    }
+  }
+  
+  /* Footer */
+  
+  footer {
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 20px 0;
+  }

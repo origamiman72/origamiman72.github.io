@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abhik Ahuja - Software Developer</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="scripts/particles.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/jquery.waypoints.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <div class="topPage">
+        <div id="landing"></div>
+        <div id="landingText">
+            <h1>Hi, I'm Abhik Ahuja, a Computer Science and Mathematics student at UC Berkeley<span class="orange">.</span></h1>
+            <button class="btn" onclick="document.getElementById('software').scrollIntoView();">Enter my Website >></button>
+        </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <header class="sticky">
+        <nav id="nav">
+            <ul>
+                <li id="homeNav" class="active"><a href="#landing">Home</a></li>
+                <li id="softwareNav"><a href="#software">Software</a></li>
+                <li id="experienceNav"><a href="#experience">Experience</a></li>
+                <li id="photographyNav">Photography</li>
+                <li id="contactNav"><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Software -->
+        <div class="container">
+            <div class="center" id="software">
+                <div class="sectionTitle">
+                    <h1>Software<span class="orange large">.</span></h1>
+                </div>
+                <div class="container">
+
+                    <div class="project" id="gitlet">
+                        <figure>
+                            <!-- <div class="containerTypeWriter"> -->
+                                <!-- <div class="output" id="output"> -->
+                                    <div class="typewriter-text cursor">> </div>
+                                    <!-- <div class="typewriter-text" id="line1">gitlet add main.py</div>
+                                    <div class="typewriter-text cursor" id="line2">gitlet commit "works now?"</div> -->
+                                    <p></p>
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        </figure>
+                        <div class="contents">
+                            <h2>Gitlet</h2>
+                            <p>Gitlet is a functional distributed version control system for use in tracking file changes,
+                                 including support for remote repositories and merging branches.</p>
+                            <p class="lang">Java</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                            <figure>
+                                <div class="containerBubbles">
+                                    <div class="bubbles">
+                                        <div class="bubble1 bubble"></div>
+                                        <div class="bubble2 bubble"></div>
+                                        <div class="bubble3 bubble"></div>
+                                    </div>
+                                </div>
+                            </figure>
+                        <div class="contents">
+                            <h2>AJA Messenger</h2>
+                            <p>An Android messaging app with built in spam filtering using a Naive Bayes classifier. 
+                                Based on the Open Source messaging app Mesibo. Created during CalHacks 6.0</p>
+                            <p class="lang">Java</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <figure id="towerBuilder">
+                            <div class="rect" id="rect1">
+                                <div class="window"></div>
+                            </div>
+                            <div class="rect" id="rect2">
+                                <div class="window"></div>
+                            </div>
+                            <div class="rect" id="rect3">
+                            </div>
+                        </figure>
+                        <div class="contents">
+                            <h2>CEP Tower Builder</h2>
+                            <p>A tower building game written in Java for desktop and Android. Uses the libGDX graphics libraries. This was built for my high school senior project.</p>
+                            <p class="lang">Java &nbsp;libGDX</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <figure></figure>
+                        <div class="contents">
+                            <h2>Lines of Action</h2>
+                            <p>An implementation of the board game Lines of Action. Created Alpha Beta pruning and Monte Carlo Tree Search based algorithms to play the game.</p>
+                            <p class="lang">Java</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <figure>
+                            <div class="typewriter-text cursor">> </div>
+                        </figure>
+                        <div class="contents">
+                            <h2>Scheme Interpreter</h2>
+                            <p>A command line interpreter for the scheme programming language written in Python. Implemented tail call optimization as well as both lexical and dynamic scoping.</p>
+                            <p class="lang">Python</p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <figure></figure>
+                        <div class="contents">
+                            <h2>Danky Qazi</h2>
+                            <p>A flappy bird clone built as a demo to teach the concepts of programming to high school students.</p>
+                            <p class="lang">Java &nbsp;libGDX</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project">
+                        <figure></figure>
+                        <div class="contents">
+                            <h2>Personal Website</h2>
+                            <p>You are here!</p>
+                            <p class="lang">HTML5 &nbsp;(S)CSS &nbsp;Javascript &nbsp;JQuery</p>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiences + Education(?) -->
+        <div class="container">
+            <div class="center" id="experience">
+                <div class="sectionTitle">
+                    <h1>Experiences<span class="orange large">.</span></h2>
+                </div>
+                <ul>
+                    <li>
+                        <h2>AVID Tutor</h2>
+                        <h3>Jan 2018 - May 2019</h3>
+                        <p>Tutored high schoolers in high school and college level coursework, especially in Mathematics.</p>
+                    </li>
+                    <li>
+                        <h2>UC Berkeley</h2>
+                        <h3>Double Major - Computer Science and Mathematics</h3>
+                        <p>I am currently a student at Cal and expect to graduate in the Spring of 2023.</p>
+                    </li>
+                    <li>
+                        <h2>San Joaquin Delta College</h2>
+                        <h3>Associate's Degree - Mathematics</h3>
+                        <p>I attended SJDC as a dual enrollment High School student and graduated with five associate's degrees.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer (TODO: add contact/links) -->
+    <footer id="footer">© 2020 Abhik Ahuja</footer>
+
+
+    <script>
+        particlesJS.load('landing', 'config/particlesjs-config.json', function() {
+            console.log('config loaded');
+        });
+    </script>
+    <script src="scripts/typing.js"></script>
+    <script src="scripts/header.js"></script>
+</body>
+</html>
