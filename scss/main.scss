@@ -216,8 +216,7 @@ html {
   }
       $breakpoint-tablet: 768px;
       @media screen and (max-width: 550px) {
-        .card {
-
+        .card, .interest {
           // background: green !important;
           padding: 1em !important;
           min-width: 15em !important;
