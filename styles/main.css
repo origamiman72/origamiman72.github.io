@@ -750,8 +750,9 @@ header h1 {
 #interests .interest {
   max-width: 30em;
   min-width: 25em;
+  margin: 0 .5em;
   margin-bottom: 2em;
-  padding: 1em;
+  padding: 1.5em;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
