@@ -73,7 +73,7 @@ html {
     margin-left: .9%;
   }
   
-  #landingText .btn {
+  .btn {
     color: white;
     background: transparent;
     box-shadow: transparent;
@@ -184,7 +184,7 @@ html {
   .center {
     margin: auto;
     padding: 40px;
-    max-width: 68em;
+    max-width: 69em;
     border-bottom: rgb(39,40,72) solid 2px;
   }
   #software {
@@ -205,38 +205,7 @@ html {
     }
   
     .project {
-      background: $background;
-      max-width: 30em;
-      min-width: 22em;
-      display: flex;
-      flex-flow: column nowrap;
-      font-family: 'Open Sans', sans-serif;
-      flex: 1 1;
-      margin: 0 .5em;
-      margin-bottom: 2em;
-      padding: 1.5em;
-      border: transparent solid 1px;
-      border-radius: 10px;
-      transition: .25s ease;
-
-
-      &:hover {
-        box-shadow: 0 7px 7px black;
-        border: white solid 1px;
-        transform: translateY(-2%);
-      }
-
-      &:active.clickable {
-        box-shadow: 0 0px 0px black;
-        transform: translateY(0%);
-      }
-
-      figure {
-        height: 5em;
-        padding: 1em 0;
-        margin: 0;
-      }
-
+    
       .lang {
         opacity: 50%;
         font-family: 'Fjalla One', sans-serif;
@@ -247,11 +216,11 @@ html {
   }
       $breakpoint-tablet: 768px;
       @media screen and (max-width: 550px) {
-        .project {
+        .card {
 
-        // background: green !important;
-        padding: 1em !important;
-        min-width: 15em !important;
+          // background: green !important;
+          padding: 1em !important;
+          min-width: 15em !important;
         }
 
         .center {
@@ -260,13 +229,43 @@ html {
         
       }
 
+  .card {
+    background: $background;
+    max-width: 30em;
+    min-width: 22em;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Open Sans', sans-serif;
+    flex: 1 1;
+    margin: 0 .5em;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border: transparent solid 1px;
+    border-radius: 10px;
+    transition: .25s ease;
+
+
+    &:hover {
+      box-shadow: 0 7px 7px black;
+      border: white solid 1px;
+      transform: translateY(-2%);
+    }
+
+    &:active.clickable {
+      box-shadow: 0 0px 0px black;
+      transform: translateY(0%);
+    }
+
+    figure {
+      height: 5em;
+      padding: 1em 0;
+      margin: 0;
+    }
+
+  }
   
   .typewriter {
-    // padding-top: 2.2em;
     display: inline-block;
-    // margin-right: 4%;
-    // margin-left: 4%;
-    // margin-top: 4.5%;
   }
   
   .typewriter-text {
@@ -525,10 +524,15 @@ html {
     }
     svg {
       fill: $accent;
-      height: 65px !important;
-      width: 65px !important;
-      padding: 1.5em;
+      height: 60px !important;
+      width: 60px !important;
+      padding: 1.75em;
       padding-top: 2.5em;
+      transition: .2s ease;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .group {
@@ -572,6 +576,38 @@ html {
         // display: inline-block;
       }
 
+    }
+  }
+
+  #interests {
+
+    .content {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .interest {
+      max-width: 30em;
+      min-width: 25em;
+      // margin: 0 1em;
+      margin-bottom: 2em;
+      padding: 1em;
+      flex-basis: 0;
+      flex-grow: 1;
+      transition: .25s ease;
+      border-radius: 10px;
+        border: 1px transparent solid;
+
+      &:hover {
+        border: 1px white solid;
+        box-shadow: 0 7px 7px black;
+        transform: translateY(-2%);
+      }
+      
+      .btn {
+        margin-right: 1em;
+        padding: .75em;
+      }
     }
   }
   

@@ -39,7 +39,8 @@
                 <li class="nav-item" class="active"><a class="nav-link" href="#landing">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
                 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link">Photography</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
                 <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
             </ul>
         </nav>
@@ -55,7 +56,8 @@
                 </div>
                 <div class="container">
 
-                    <div class="project" id="gitlet">
+                    <!-- Gitlet -->
+                    <div class="project card" id="gitlet">
                         <figure>
                             <!-- <div class="containerTypeWriter"> -->
                                 <!-- <div class="output" id="output"> -->
@@ -73,24 +75,9 @@
                             <p class="lang">Java</p>
                         </div>
                     </div>
-                    <div onclick="location.href='https://github.com/andrewkdinh/aja';" class="project clickable">
-                            <figure>
-                                <div class="containerBubbles">
-                                    <div class="bubbles">
-                                        <div class="bubble1 bubble"></div>
-                                        <div class="bubble2 bubble"></div>
-                                        <div class="bubble3 bubble"></div>
-                                    </div>
-                                </div>
-                            </figure>
-                        <div class="contents">
-                            <h2>AJA Messenger</h2>
-                            <p>An Android messaging app with built in spam filtering using a Naive Bayes classifier. 
-                                Based on the Open Source messaging app Mesibo. Created during CalHacks 6.0</p>
-                            <p class="lang">Java</p>
-                        </div>
-                    </div>
-                    <div onclick="location.href='https://github.com/origamiman72/PhysicalProduct';" class="project clickable">
+
+                    <!-- CEP Tower Builder -->
+                    <div onclick="location.href='https://github.com/origamiman72/PhysicalProduct';" class="project card clickable">
                         <figure id="towerBuilder">
                             <div class="rect" id="rect1">
                                 <div class="window"></div>
@@ -108,7 +95,27 @@
                         </div>
                     </div>
 
-                    <div class="project">
+                    <!-- AJA Messenger -->
+                    <div onclick="location.href='https://github.com/andrewkdinh/aja';" class="project card clickable">
+                            <figure>
+                                <div class="containerBubbles">
+                                    <div class="bubbles">
+                                        <div class="bubble1 bubble"></div>
+                                        <div class="bubble2 bubble"></div>
+                                        <div class="bubble3 bubble"></div>
+                                    </div>
+                                </div>
+                            </figure>
+                        <div class="contents">
+                            <h2>AJA Messenger</h2>
+                            <p>An Android messaging app with built in spam filtering using a Naive Bayes classifier. 
+                                Based on the Open Source messaging app Mesibo. Created during CalHacks 6.0</p>
+                            <p class="lang">Java</p>
+                        </div>
+                    </div>
+
+                    <!-- LOA -->
+                    <div class="project card">
                         <figure></figure>
                         <div class="contents">
                             <h2>Lines of Action</h2>
@@ -117,7 +124,8 @@
                         </div>
                     </div>
 
-                    <div class="project">
+                    <!-- Scheme Interpreter -->
+                    <div class="project card">
                         <figure>
                             <div class="typewriter-text cursor">> </div>
                         </figure>
@@ -128,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div onclick="location.href='https://github.com/origamiman72/danky-qazi';" class="project clickable">
+                    <div onclick="location.href='https://github.com/origamiman72/danky-qazi';" class="project card clickable">
                         <figure></figure>
                         <div class="contents">
                             <h2>Danky Qazi</h2>
@@ -217,6 +225,39 @@
                 <div>(S)CSS</div>
                 <div>Javascript</div> -->
             </div>
+        </div>
+    </div>
+
+    <!-- Interests -->
+    <div class="container">
+        <div class="center" id="interests">
+            <div class="sectionTitle">
+                <h1>Interests <span class="orange large">.</span></h1>
+            </div>
+            <div class="content">
+                <div class="interest">
+                    <h2>Origami</h2>
+                    <p>I've been folding paper as a hobby since around the first grade. It's still one of my favorite pastimes.</p>
+                    <button class="btn" onclick="location.href='';">Portfolio</button>
+                </div>
+                <div class="interest">
+                    <h2>Photography</h2>
+                    <p>I enjoy taking landscape photography whenever I get the chance. I take photos with a Nikon D3300 and my phone (Oneplus 6) and edit everything in Adobe Lightroom.</p>
+                    <button class="btn" onclick="location.href='';">Portfolio</button>
+                    <button class="btn" onclick="location.href='https://instagram.com/abhiktakespictures';">Instagram</button>
+                </div>
+                <div class="interest">
+                    <h2>Rubik's Cubes</h2>
+                    <p>I enjoy solving Rubik's cubes as a hobby. I average 17.5 seconds on a 3x3 and much, much worse at everything else.</p>
+                    <button class="btn" onclick="location.href='https://www.worldcubeassociation.org/persons/2015AHUJ01';">WCA Profile</button>
+                </div>
+                <div class="interest">
+                    <h2>Video Games</h2>
+                    <p>Is this really surprising?</p>
+                    <button class="btn" onclick="location.href='https://steamcommunity.com/id/origamiman72';">Steam Profile</button>
+                </div>
+            </div>
+
         </div>
     </div>
     
