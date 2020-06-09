@@ -274,10 +274,11 @@ header h1 {
 
 @media screen and (max-width: 550px) {
   .project {
+    padding: 1em !important;
     min-width: 15em !important;
   }
   .center {
-    padding: 1em .5em;
+    padding: 1em .5em !important;
   }
 }
 
