@@ -207,9 +207,12 @@ html {
     .project {
       background: $background;
       max-width: 30em;
+      min-width: 22em;
       display: flex;
       flex-flow: column nowrap;
       font-family: 'Open Sans', sans-serif;
+      flex: 1 1;
+      margin: 0 .5em;
       margin-bottom: 2em;
       padding: 1.5em;
       border: transparent solid 1px;
