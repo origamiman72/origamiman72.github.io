@@ -272,6 +272,12 @@ header h1 {
   font-family: 'Fjalla One', sans-serif;
 }
 
+@media screen and (max-width: 550px) {
+  .project {
+    min-width: 10em !important;
+  }
+}
+
 .typewriter {
   display: inline-block;
 }
