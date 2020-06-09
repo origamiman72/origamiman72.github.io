@@ -100,6 +100,7 @@ header {
   z-index: 10;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   color: white;
   width: 100%;
   margin: 0;
@@ -113,13 +114,6 @@ header {
   text-transform: uppercase;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
-}
-
-.fixed {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
 }
 
 header nav {
