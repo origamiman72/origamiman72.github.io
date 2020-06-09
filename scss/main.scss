@@ -4,6 +4,7 @@ html {
 
   $background: rgb(31, 32, 65);
   $accent: rgb(244, 157, 55);
+  $fjalla: 'Fjalla One', sans-serif;
   
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
   @media (prefers-reduced-motion: reduce) {
@@ -13,8 +14,8 @@ html {
   }
  
   body {
-    background: white;
-    color: black;
+    background: $background;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -118,6 +119,10 @@ html {
       text-decoration: none;
       color: white;
       transition: .2s;
+
+      &:hover {
+        color: rgb(209, 209, 209);
+      }
     }
   
     ul {
@@ -201,7 +206,6 @@ html {
       display: flex;
       flex-flow: column nowrap;
       font-family: 'Open Sans', sans-serif;
-      // padding-bottom: 3em;
       margin-bottom: 2em;
       padding: 1.5em;
       border: transparent solid 1px;
@@ -468,12 +472,58 @@ html {
   
   #experience {
     // background: rgb(53, 55, 114);
-    color: white;
-    padding: 20px;
-    height: 100vh;
-  
+    // padding: 20px;
+
+    .exp {
+      padding: 0 1em;
+    }
+
+    h2 {
+      padding: .5em .5em .5em .5em;
+      font-size: xx-large;
+    }
+
     h3 {
+      font-family: $fjalla;
+      font-size: x-large;
+    }
+
+    h4 {
+      font-family: $fjalla;
       color: rgb(166, 167, 194);
+    }
+
+  }
+    #languages {
+      font-family: $fjalla;
+      font-size: x-large;
+      display: flex;
+      margin: auto;
+
+      div {
+        display: inline-block;
+        padding: 2em;
+      }
+    }
+
+  .languages {
+    font-family: $fjalla;
+    display: flex;
+    flex-flow: column;
+
+    h3 {
+    }
+
+
+    ul  {
+      display: flex;
+      flex-flow: row wrap;
+      margin: auto;
+      li {
+        justify-content: space-between;
+        // display: inline-block;
+      }
+
     }
   }
   
