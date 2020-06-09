@@ -135,10 +135,10 @@ html {
         padding: 0 15px;
       }
 
-    .active > a {
-      color: $accent !important;
-      transition: .2s;
-    }
+      .active {
+        color: $accent !important;
+      }
+
 
     }
   }

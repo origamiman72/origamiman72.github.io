@@ -146,10 +146,8 @@ header nav ul li {
   padding: 0 15px;
 }
 
-header nav ul .active > a {
+header nav ul .active {
   color: #f49d37 !important;
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
 header h1 {

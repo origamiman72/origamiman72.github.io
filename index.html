@@ -16,9 +16,11 @@
     <script src="scripts/particles.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/jquery.waypoints.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navBar">
 
     <!-- Landing Page -->
     <div class="topPage">
@@ -31,13 +33,13 @@
 
     <!-- Nav Bar -->
     <header class="sticky">
-        <nav id="nav">
-            <ul>
-                <li id="homeNav" class="active"><a href="#landing">Home</a></li>
-                <li id="softwareNav"><a href="#software">Software</a></li>
-                <li id="experienceNav"><a href="#experience">Experience</a></li>
-                <li id="photographyNav">Photography</li>
-                <li id="contactNav"><a href="#footer">Contact</a></li>
+        <nav class="navBar" id="nav">
+            <ul class="nav">
+                <li class="nav-item dropdown" class="active"><a class="nav-link" href="#landing">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link">Photography</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -46,7 +48,7 @@
 
         <!-- Software -->
         <div class="container">
-            <div class="center" id="software">
+            <div class="center target" id="software">
                 <div class="sectionTitle">
                     <h1>Software<span class="orange large">.</span></h1>
                 </div>
@@ -149,7 +151,7 @@
 
         <!-- Experiences + Education(?) -->
         <div class="container">
-            <div class="center" id="experience">
+            <div class="center target" id="experience">
                 <div class="sectionTitle">
                     <h1>Experience<span class="orange large">.</span></h2>
                 </div>
