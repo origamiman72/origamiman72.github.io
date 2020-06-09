@@ -24,6 +24,10 @@ html {
   ul {
     list-style-type: none;
   }
+
+  .clickable {
+    cursor: pointer; 
+  }
   
   h2, h3 {
     font-family: 'Fjalla One', sans-serif;
@@ -216,6 +220,11 @@ html {
         box-shadow: 0 7px 7px black;
         border: white solid 1px;
         transform: translateY(-2%);
+      }
+
+      &:active.clickable {
+        box-shadow: 0 0px 0px black;
+        transform: translateY(0%);
       }
 
       figure {
@@ -498,15 +507,20 @@ html {
     }
     svg {
       fill: $accent;
-      height: 5em;
-      width: 5em;
-      padding: 1em;
-      padding-top: 2em;
+      height: 65px !important;
+      width: 65px !important;
+      padding: 1.5em;
+      padding-top: 2.5em;
     }
 
     .group {
       display: flex;
-      flex-flow: row;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+
+      .description {
+        flex: 1 4;
+      }
     }
 
   }
