@@ -87,7 +87,7 @@ html {
     transition: ease .4s all;
     outline: none;
   
-    &:hover {
+    &:hover, &:active {
       border: $accent solid 2px;
       background: $accent;
       cursor: pointer;
