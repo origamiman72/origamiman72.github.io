@@ -493,6 +493,22 @@ html {
       color: rgb(166, 167, 194);
     }
 
+    .icon {
+      fill: $accent;
+    }
+    svg {
+      fill: $accent;
+      height: 5em;
+      width: 5em;
+      padding: 1em;
+      padding-top: 2em;
+    }
+
+    .group {
+      display: flex;
+      flex-flow: row;
+    }
+
   }
     #languages {
       font-family: $fjalla;

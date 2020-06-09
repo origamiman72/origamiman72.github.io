@@ -628,6 +628,28 @@ header h1 {
   color: #a6a7c2;
 }
 
+#experience .icon {
+  fill: #f49d37;
+}
+
+#experience svg {
+  fill: #f49d37;
+  height: 5em;
+  width: 5em;
+  padding: 1em;
+  padding-top: 2em;
+}
+
+#experience .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
 #languages {
   font-family: "Fjalla One", sans-serif;
   font-size: x-large;
