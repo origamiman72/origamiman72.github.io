@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: origamiman72.github.io
+Token: c07894920de57c160d04810841bfa4a99630f7d63ccb574dcad71fb92933d7e0
