@@ -194,37 +194,15 @@ html {
     }
 
     .closed {
+      display: none;
       height: 0px;
       // li {
       //   disp
       // }
-      transform: scaleY(0);
-      animation: .25s scaleDown;
       li {
-        animation: fadeOut .25s;
       }
     }
   }
-
-@keyframes scale {
-  0% {transform: scaleY(0); height: 0}
-  100% {transform: scaleY(1); height: 13.25em;}
-}
-@keyframes scaleDown {
-  100% {transform: scaleY(0); height: 0}
-  0% {transform: scaleY(1); height: 13.25em;}
-}
-
-@keyframes fadeOut {
-  0% {opacity: 100;}
-  750% {opacity: 0;}
-  100% {opacity: 0;}
-}
-@keyframes fadeIn {
-  100% {opacity: 100;}
-  25% {opacity: 0;}
-  0% {opacity: 0;}
-}
 
 .navbar-toggle {
   display: none;
