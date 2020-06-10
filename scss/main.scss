@@ -19,6 +19,7 @@ html {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+
   }
   
   ul {
@@ -103,8 +104,8 @@ html {
     color: white;
     width: 100%;
     margin: 0;
+    // height: 1.5rem;
   
-    /* background: black; */
     background: $background;
     padding: 20px 0;
     border-bottom: solid rgb(39,40,72) 2px;
@@ -117,6 +118,7 @@ html {
   
   header nav {
     display: flex;
+    flex-flow: column nowrap;
     font-size: 18px;
 
     a {
@@ -132,10 +134,12 @@ html {
     ul {
       list-style-type: none;
       margin: auto;
+      padding: 0;
   
       li {
         display: inline-block;
         padding: 0 15px;
+        animation: scale-down 1s ease;
       }
 
       .active {
@@ -145,6 +149,92 @@ html {
 
     }
   }
+
+  .navbar-title {
+    // display: none;
+    animation: none !important;
+    font-size: large;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav {
+      transform-origin: top center;
+
+      .navbar-title {
+        display: block !important;
+        font-size: 1.2em;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      li {
+        padding: .5em;
+        display: block;
+        &:first-child {
+          margin-top: 1em;
+      }
+      }
+    }
+    .navbar-toggle {
+      display: block !important;
+    }
+
+    .open {
+      .navbar-title {
+        padding-bottom: .6em;
+      }
+      animation: .25s scale ;
+      li {
+        animation: .25s fadeIn;
+      }
+
+    }
+
+    .closed {
+      height: 0px;
+      // li {
+      //   disp
+      // }
+      transform: scaleY(0);
+      animation: .25s scaleDown;
+      li {
+        animation: fadeOut .25s;
+      }
+    }
+  }
+
+@keyframes scale {
+  0% {transform: scaleY(0); height: 0}
+  100% {transform: scaleY(1); height: 13.25em;}
+}
+@keyframes scaleDown {
+  100% {transform: scaleY(0); height: 0}
+  0% {transform: scaleY(1); height: 13.25em;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 100;}
+  750% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes fadeIn {
+  100% {opacity: 100;}
+  25% {opacity: 0;}
+  0% {opacity: 0;}
+}
+
+.navbar-toggle {
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  cursor: pointer; 
+  height: 35px !important;
+  width: 35px !important;
+}
   
   
   header h1 {
@@ -214,6 +304,7 @@ html {
     }
   
   }
+
       $breakpoint-tablet: 768px;
       @media screen and (max-width: 550px) {
         .card, .interest {
@@ -222,11 +313,43 @@ html {
           min-width: 15em !important;
         }
 
+        .group {
+          flex-flow: column !important;
+
+          svg {
+            padding: .5em .5em !important;
+            margin-top: 2em !important;
+          }
+        }
+
+
+
         .center {
           padding: 40px .5em !important;
         }
         
       }
+
+        @media screen and (max-width: 860px) {
+
+          #skills {
+            margin-left: 0;
+          }
+          .skill-group {
+            ul {
+              flex-flow: column !important;
+
+              li {
+                padding: .2em 0 !important;
+
+                &:before {
+                  content: '> '
+                }
+              }
+            }
+          }
+
+        }
 
   .card {
     background: $background;
@@ -536,7 +659,7 @@ html {
 
     .group {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row;
       justify-content: flex-start;
 
       .description {
@@ -545,38 +668,65 @@ html {
     }
 
   }
-    #languages {
-      font-family: $fjalla;
-      font-size: x-large;
-      display: flex;
-      margin: auto;
 
-      div {
-        display: inline-block;
-        padding: 2em;
-      }
-    }
+// Skills
+.skill-group {
+  font-family: $fjalla;
+  padding: 1em;
 
-  .languages {
-    font-family: $fjalla;
+  h2 {
+    font-size: xx-large;
+
+  }
+
+  ul {
     display: flex;
-    flex-flow: column;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
 
-    h3 {
+    li {
+      font-size: large;
+      padding: 2em;
+
+      &:first-child {
+        padding-left: 0;
+        margin-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+        margin-right: 0;
+      }
     }
 
-
-    ul  {
-      display: flex;
-      flex-flow: row wrap;
-      margin: auto;
-      li {
-        justify-content: space-between;
-        // display: inline-block;
-      }
-
+    .cs {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: lime;
     }
   }
+}
+
+  // .languages {
+  //   font-family: $fjalla;
+  //   display: flex;
+  //   flex-flow: column;
+
+  //   h3 {
+  //   }
+
+
+  //   ul  {
+  //     display: flex;
+  //     flex-flow: row wrap;
+  //     margin: auto;
+  //     li {
+  //       justify-content: space-between;
+  //       // display: inline-block;
+  //     }
+
+  //   }
+  // }
 
   #interests {
 

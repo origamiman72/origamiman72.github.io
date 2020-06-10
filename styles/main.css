@@ -108,7 +108,6 @@ header {
   color: white;
   width: 100%;
   margin: 0;
-  /* background: black; */
   background: #1f2041;
   padding: 20px 0;
   border-bottom: solid #272848 2px;
@@ -124,6 +123,10 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   font-size: 18px;
 }
 
@@ -141,15 +144,187 @@ header nav a:hover {
 header nav ul {
   list-style-type: none;
   margin: auto;
+  padding: 0;
 }
 
 header nav ul li {
   display: inline-block;
   padding: 0 15px;
+  -webkit-animation: scale-down 1s ease;
+          animation: scale-down 1s ease;
 }
 
 header nav ul .active {
   color: #f49d37 !important;
+}
+
+.navbar-title {
+  -webkit-animation: none !important;
+          animation: none !important;
+  font-size: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+  }
+  .nav .navbar-title {
+    display: block !important;
+    font-size: 1.2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .nav li {
+    padding: .5em;
+    display: block;
+  }
+  .nav li:first-child {
+    margin-top: 1em;
+  }
+  .navbar-toggle {
+    display: block !important;
+  }
+  .open {
+    -webkit-animation: .25s scale;
+            animation: .25s scale;
+  }
+  .open .navbar-title {
+    padding-bottom: .6em;
+  }
+  .open li {
+    -webkit-animation: .25s fadeIn;
+            animation: .25s fadeIn;
+  }
+  .closed {
+    height: 0px;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-animation: .25s scaleDown;
+            animation: .25s scaleDown;
+  }
+  .closed li {
+    -webkit-animation: fadeOut .25s;
+            animation: fadeOut .25s;
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    height: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    height: 13.25em;
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    height: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    height: 13.25em;
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    height: 0;
+  }
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    height: 13.25em;
+  }
+}
+
+@keyframes scaleDown {
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    height: 0;
+  }
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    height: 13.25em;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 100;
+  }
+  750% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100;
+  }
+  750% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 100;
+  }
+  25% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 100;
+  }
+  25% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+.navbar-toggle {
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  cursor: pointer;
+  height: 35px !important;
+  width: 35px !important;
 }
 
 header h1 {
@@ -232,8 +407,36 @@ header h1 {
     padding: 1em !important;
     min-width: 15em !important;
   }
+  .group {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: column !important;
+            flex-flow: column !important;
+  }
+  .group svg {
+    padding: .5em .5em !important;
+    margin-top: 2em !important;
+  }
   .center {
     padding: 40px .5em !important;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #skills {
+    margin-left: 0;
+  }
+  .skill-group ul {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: column !important;
+            flex-flow: column !important;
+  }
+  .skill-group ul li {
+    padding: .2em 0 !important;
+  }
+  .skill-group ul li:before {
+    content: '> ';
   }
 }
 
@@ -679,8 +882,8 @@ header h1 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -692,46 +895,48 @@ header h1 {
           flex: 1 4;
 }
 
-#languages {
+.skill-group {
   font-family: "Fjalla One", sans-serif;
-  font-size: x-large;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+  padding: 1em;
 }
 
-#languages div {
-  display: inline-block;
-  padding: 2em;
+.skill-group h2 {
+  font-size: xx-large;
 }
 
-.languages {
-  font-family: "Fjalla One", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
-.languages ul {
+.skill-group ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin: auto;
-}
-
-.languages ul li {
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.skill-group ul li {
+  font-size: large;
+  padding: 2em;
+}
+
+.skill-group ul li:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.skill-group ul li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.skill-group ul .cs {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: lime;
 }
 
 #interests .content {
