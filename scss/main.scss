@@ -151,15 +151,22 @@ html {
   }
 
   .navbar-title {
-    // display: none;
     animation: none !important;
     font-size: large;
     display: flex;
     margin: auto;
     justify-content: center;
+    display: none;
   }
 
   @media screen and (max-width: 768px) {
+
+    .navbar-title {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+
+    }
     .nav {
       transform-origin: top center;
 

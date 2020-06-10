@@ -169,9 +169,19 @@ header nav ul .active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .nav {
     -webkit-transform-origin: top center;
             transform-origin: top center;
