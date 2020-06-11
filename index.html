@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head> <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Abhik Ahuja - Software Developer</title>
 
     <!-- Stylesheets, Fonts, etc. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -19,6 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/jquery.waypoints.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/33caf7816b.js" crossorigin="anonymous"></script> -->
 
 
 </head>
@@ -34,18 +35,25 @@
     </div>
 
     <!-- Nav Bar -->
-    <header class="sticky" data-spy="affix">
-        <nav class="navbar" id="nav">
-            <svg class="navbar-toggle" id="js-navbar-toggle" xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><title>ionicons-v5-j</title><line x1='88' y1='152' x2='424' y2='152' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px'/><line x1='88' y1='256' x2='424' y2='256' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px'/><line x1='88' y1='360' x2='424' y2='360' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px'/></svg>
-            <div class="navbar-title">Abhik Ahuja</div>
-            <ul class="nav closed" id="js-nav">
-                <li class="nav-item" class="active"><a class="nav-link" href="#landing">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-                <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
-            </ul>
+    <header class="sticky-top">
+        <!-- <svg class="navbar-toggler" type="button" data-toggle="collapse" data-target="#js-nav" id="js-navbar-toggle" xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><title>ionicons-v5-j</title><line x1='88' y1='152' x2='424' y2='152' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px'/><line x1='88' y1='256' x2='424' y2='256' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px'/><line x1='88' y1='360' x2='424' y2='360' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px'/></svg> -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+            <!-- <div class="navbar-brand">Abhik Ahuja</div> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-brand d-lg-none">Abhik Ahuja</div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item" class="active"><a class="nav-link" href="#landing">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -208,7 +216,7 @@
                         <div class="exp">
                             <h3>Open Computing Facility</h3>
                             <h4>Providing Computing Resources to the Community</h4>
-                            <p>I volunteer at the Open Computing Facility, which provides computing resources to the UC Berkeley community, including website hosting and free printing.</p>
+                            <p>I volunteer at the Open Computing Facility, which provides computing resources to the UC Berkeley community, including website hosting and free printing using free and open source software.</p>
                         </div>
                     </div>
                 </div>
@@ -221,7 +229,7 @@
             <div class="sectionTitle">
                 <h1>Skills<span class="orange large">.</span></h1>
             </div>
-            <div class="content">
+            <div class="content" id="skill-content">
                 <div class="skill-group">
                     <h2>Languages</h2>
                     <ul>
@@ -298,7 +306,7 @@
     </script>
     <script src="scripts/typing.js"></script>
 
-    <script>
+    <!-- <script>
         let mainNav = document.getElementById('js-nav');
         let navBarToggle = document.getElementById('js-navbar-toggle');
 
@@ -306,6 +314,6 @@
             mainNav.classList.toggle('closed');
             mainNav.classList.toggle('open');
         });
-    </script>
+    </script> -->
 </body>
 </html>
