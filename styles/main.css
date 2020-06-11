@@ -65,6 +65,12 @@ h2, h3 {
           transform: translate(-50%, -50%);
 }
 
+#landingText h1 {
+  font-size: 2em;
+  padding: .2em;
+  line-height: 1.4em;
+}
+
 .orange {
   color: #f49d37;
   font-size: 1.2em;
@@ -85,7 +91,7 @@ h2, h3 {
           text-decoration: None;
   border: white solid 2px;
   border-radius: 5px;
-  padding: 15px;
+  padding: 12px;
   margin-top: 10px;
   font-size: medium;
   font-family: 'Fjalla One', sans-serif;
@@ -249,6 +255,7 @@ header h1 {
   }
   .group svg {
     padding: .5em .5em !important;
+    margin-left: .25em !important;
     margin-top: 1em !important;
   }
   .center {

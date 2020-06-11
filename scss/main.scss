@@ -63,6 +63,12 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 
+    h1 {
+      font-size: 2em;
+      padding: .2em;
+      line-height: 1.4em;
+    }
+
   }
   
   .orange {
@@ -83,7 +89,7 @@ html {
     text-decoration: None;
     border: white solid 2px;
     border-radius: 5px;
-    padding: 15px;
+    padding: 12px;
     margin-top: 10px;
     font-size: medium;
     font-family: 'Fjalla One', sans-serif;
@@ -312,6 +318,7 @@ html {
 
           svg {
             padding: .5em .5em !important;
+            margin-left: .25em !important;
             margin-top: 1em !important;
           }
         }
