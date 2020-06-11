@@ -95,11 +95,35 @@ html {
     font-family: 'Fjalla One', sans-serif;
     transition: ease .4s all;
     outline: none !important;
+
+    span {
+      display: inline-block;
+      position: relative;
+      transition: .5s ease;
+
+      &::after {
+        content: ' >>';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: .5s ease;
+      }
+    }
   
     &:hover, &:active {
       border: $accent solid 2px;
       background: $accent;
       cursor: pointer;
+
+      span {
+        padding-right: 20px;
+      }
+
+      span::after {
+        opacity: 1;
+        right: 0;
+      }
     }
   }
   

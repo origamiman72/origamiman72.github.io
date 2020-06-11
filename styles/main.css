@@ -100,10 +100,36 @@ h2, h3 {
   outline: none !important;
 }
 
+.btn span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.btn span::after {
+  content: ' >>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
 .btn:hover, .btn:active {
   border: #f49d37 solid 2px;
   background: #f49d37;
   cursor: pointer;
+}
+
+.btn:hover span, .btn:active span {
+  padding-right: 20px;
+}
+
+.btn:hover span::after, .btn:active span::after {
+  opacity: 1;
+  right: 0;
 }
 
 /* Header */
