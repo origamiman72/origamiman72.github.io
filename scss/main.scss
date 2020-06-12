@@ -413,6 +413,29 @@ html {
       height: 7em;
       padding: 1em 0;
       margin: 0;
+
+      &.game {
+        padding: .5em 0;
+      }
+
+
+      &.active {
+        svg {
+          animation: bounce infinite 1s cubic-bezier(0.280, 0.840, 0.420, 1);
+        }
+      }
+    }
+
+
+    .game {
+      svg {
+        height: 6em !important;
+        width: 6em !important;
+        fill: $accent;
+        margin-bottom: 3em;
+        padding: 0;
+        margin-top: 0;
+      }
     }
 
     h2 {
@@ -420,6 +443,69 @@ html {
     }
 
   }
+
+  .frame {
+    height: 5em;
+    width: 3em;
+    border: white solid 4px;
+    border-radius: 8px;
+    position: absolute;
+
+    .notch {
+      height: .25em;
+      width: 1.2em;
+      background: white;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+
+    .screen {
+      background: $accent;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 3px;
+
+    }
+  }
+
+  .active {
+    .screen {
+      animation: openApp 4s ease infinite;
+    }
+  }
+  @keyframes openApp {
+    30% {top: 70%; border-radius: 50%; height: 10px; width: 10px; opacity: 100%;}
+    40% {top: 0%; border-radius: 3px; height: 100%; width: 100%;}
+    0% {top: 0%; border-radius: 3px; height: 100%; width: 100%; opacity: 100%;}
+    10% {top: 70%; border-radius: 50%; height: 10px; width: 10px; opacity: 0%;}
+    29% {top: 70%; border-radius: 50%; height: 10px; width: 10px; opacity: 0%;}
+    // 30% {opacity: 0;}
+    30% {top: 70%; border-radius: 50%; height: 10px; width: 10px; opacity: 100%;}
+  }
+  // @keyframes openAppold {
+  //   0% {top: 70%; border-radius: 50%; height: 10px; width: 10px;}
+  //   15% {top: 0%; border-radius: 3px; height: 100%; width: 100%;}
+  //   70% {top: 0%; border-radius: 3px; height: 100%; width: 100%; opacity: 100%;}
+  //   80% {top: 70%; border-radius: 50%; height: 10px; width: 10px; opacity: 0%;}
+  //   100% {opacity: 0;}
+  // }
+
+
+  @keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-30px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-2px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
   
   .typewriter {
     display: inline-block;
