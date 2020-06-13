@@ -26,6 +26,14 @@ ul {
   cursor: pointer;
 }
 
+@media screen and (max-width: 700px) {
+  .links {
+    top: 115px !important;
+    left: 0px !important;
+    right: auto !important;
+  }
+}
+
 header {
   position: fixed;
   top: 20px;
@@ -94,7 +102,7 @@ header h1 {
 }
 
 .topmargin {
-  padding: 110px 10px 0 10px;
+  padding-top: 110px;
 }
 
 .grid-item {
@@ -107,7 +115,7 @@ header h1 {
           animation-fill-mode: forwards;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  margin: 10px 0;
+  margin: 10px 0px;
   border: .5rem solid white;
   overflow: hidden;
 }
@@ -153,6 +161,13 @@ header h1 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .grid-item {
+    max-width: 390px;
+    margin-left: 10px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
