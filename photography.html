@@ -25,9 +25,10 @@
     </header>
 
     <div class="links">
-        <a href="index.html"><< Main Site</a>
+        <a href="index.html" id="mainSite"><< Main Site</a>
+        <div class="bar">|</div>
         <a href="https://instagram.com/abhiktakespictures">
-            <i style="color:#FFF" class="fab fa-instagram"></i>
+            <i class="fab fa-instagram"></i>
         </a>
     </div>
 
@@ -102,15 +103,26 @@
 //         });
 //     }
 // });
-var $grid = $('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 200,
-  gutter: 10,
-  fitWidth: true
-});
-$grid.imagesLoaded().progress(function() {
-  $grid.masonry('layout');
+// var $grid = $('.grid').masonry({
+//   // options
+//   itemSelector: '.grid-item',
+//   columnWidth: 200,
+//   gutter: 10,
+//   fitWidth: true
+// });
+// $grid.imagesLoaded().progress(function() {
+//   $grid.masonry('layout');
+// });
+
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+    // options...
+    itemSelector: '.grid-item',
+    columnWidth: 200,
+    gutter: 10,
+    fitWidth: true
+  });
 });
 </script>
 </html>

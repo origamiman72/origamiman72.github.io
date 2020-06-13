@@ -58,6 +58,16 @@ header h1 {
   padding: 20px 15px 20px 10px;
 }
 
+.links .bar {
+  background: white;
+  height: 1.8em;
+  width: .05em;
+  color: transparent;
+  -webkit-transform: translateY(7%);
+          transform: translateY(7%);
+  margin: 0 5px;
+}
+
 .links a {
   padding: 0 10px;
   color: white;
@@ -73,7 +83,13 @@ header h1 {
   color: rgba(255, 255, 255, 0.795);
 }
 
+.links a:hover i {
+  color: rgba(255, 255, 255, 0.795);
+}
+
 .links a i {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
   font-size: xx-large;
 }
 
