@@ -73,8 +73,12 @@ h2, h3 {
 
 .resume {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 17px;
+  right: 40px;
+}
+
+.resume a {
+  text-decoration: none;
 }
 
 .orange {

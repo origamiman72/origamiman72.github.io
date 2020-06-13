@@ -49,7 +49,7 @@ header {
 
 header h1 {
   margin: auto;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Cutive mono", monospace;
 }
 
 .links {
@@ -63,13 +63,13 @@ header h1 {
   display: flex;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  padding: 20px 15px 20px 10px;
+  padding: 20px 15px 16px 10px;
 }
 
 .links .bar {
   background: white;
   height: 1.8em;
-  width: .05em;
+  width: .08em;
   color: transparent;
   -webkit-transform: translateY(7%);
           transform: translateY(7%);
@@ -80,7 +80,7 @@ header h1 {
   padding: 0 10px;
   color: white;
   text-decoration: none;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Cutive mono", monospace;
   -webkit-transition: .3s ease;
   transition: .3s ease;
   font-size: 1.5em;
