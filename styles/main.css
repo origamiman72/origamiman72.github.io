@@ -71,10 +71,20 @@ h2, h3 {
   line-height: 1.4em;
 }
 
+.resume {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
 .orange {
   color: #f49d37;
   font-size: 1.2em;
   margin-left: .6%;
+}
+
+.orange-color {
+  color: #f49d37;
 }
 
 .large {
@@ -1084,5 +1094,19 @@ footer {
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
   padding: 20px 0;
+}
+
+footer .contactTitle {
+  padding: 10px 0;
+}
+
+footer .links {
+  font-size: xx-large;
+  padding-bottom: 10px;
+}
+
+footer .links a {
+  padding: 5px;
+  color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

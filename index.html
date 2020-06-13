@@ -12,14 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
     <!-- Scripts -->
     <script src="scripts/particles.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/jquery.waypoints.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <!-- <script src="https://kit.fontawesome.com/33caf7816b.js" crossorigin="anonymous"></script> -->
 
 
 </head>
@@ -31,6 +29,9 @@
         <div id="landingText">
             <h1>Hi, I'm Abhik Ahuja, a Computer Science and Mathematics student at UC Berkeley<span class="orange">.</span></h1>
             <button class="btn" onclick="document.getElementById('software').scrollIntoView();"><span>Enter my Website </span></button>
+        </div>
+        <div class="resume">
+            <button class="btn" onclick="location.href='docs/Resume.pdf'">Résumé</button>
         </div>
     </div>
 
@@ -212,7 +213,7 @@
                         <div class="exp">
                             <h3>San Joaquin Delta College</h3>
                             <h4>Associate's Degree - Mathematics</h4>
-                            <h4>GPA - 3.97</h4>
+                            <h4>GPA - 3.95</h4>
                             <p>I attended San Joaquin Delta College as a dual enrollment High School student and graduated with five associate's degrees.</p>
                         </div>
                     </div>
@@ -286,7 +287,7 @@
                 <div class="interest">
                     <h2>Photography</h2>
                     <p>I enjoy taking landscape photography whenever I get the chance. I take photos with a Nikon D3300 and my phone (Oneplus 6) and edit everything in Adobe Lightroom.</p>
-                    <button class="btn" onclick="location.href='';">Portfolio</button>
+                    <button class="btn" onclick="location.href='Photography.html';">Portfolio</button>
                     <button class="btn" onclick="location.href='https://instagram.com/abhiktakespictures';">Instagram</button>
                 </div>
                 <div class="interest">
@@ -305,7 +306,29 @@
     </div>
     
     <!-- Footer (TODO: add contact/links) -->
-    <footer id="footer">© 2020 Abhik Ahuja</footer>
+    <footer id="footer">
+        <div class="contactInfo">
+            <!-- <h2 class="contactTitle">Contact Me</h2> -->
+            <div class="links">
+                <a href="mailto:ahujaabhik@berkeley.edu">
+                    <i style="color:#FFF" class="far fa-envelope"></i>
+                </a>
+                <a href="https://github.com/origamiman72">
+                    <i style="color:#FFF;" class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abhik-ahuja/">
+                    <i style="color:#FFF" class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://t.me/Origamiman72">
+                    <i style="color:#FFF" class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://instagram.com/abhiktakespictures">
+                    <i style="color:#FFF" class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="license">© 2020 Abhik Ahuja</div>
+    </footer>
 
 
     <script>
@@ -315,14 +338,5 @@
     </script>
     <script src="scripts/typing.js"></script>
 
-    <!-- <script>
-        let mainNav = document.getElementById('js-nav');
-        let navBarToggle = document.getElementById('js-navbar-toggle');
-
-        navBarToggle.addEventListener('click', function () {
-            mainNav.classList.toggle('closed');
-            mainNav.classList.toggle('open');
-        });
-    </script> -->
 </body>
 </html>
