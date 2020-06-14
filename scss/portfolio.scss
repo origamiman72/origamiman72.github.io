@@ -4,7 +4,14 @@ html {
 
   $background: white;
   $accent: rgb(244, 157, 55);
-  $fjalla: 'Fjalla One', sans-serif;
+//   $title: 'Fjalla One', sans-serif;
+//   $title: 'Inconsolata', monospace;
+  $title: 'Cutive mono', monospace;
+//   $title: 'Quicksand', sans-serif;
+    // $title: 'Source Code Pro', monospace;
+    // $title: 'DM Mono', monospace;
+  $uppercase: false;
+//   $uppercase: true;
   
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
   @media (prefers-reduced-motion: reduce) {
@@ -30,6 +37,16 @@ html {
     cursor: pointer; 
   }
 
+@media screen and (max-width: 700px) {
+    .links {
+        top: 115px !important;
+        left: 0px !important;
+        right: auto !important;
+    }
+    .topmargin {
+        padding-top: 200px !important;
+    }
+}
 
 header {
     position: fixed;
@@ -39,12 +56,16 @@ header {
     background: rgba(0, 0, 0, 0.658);
     color: white;
 
+    @if $uppercase {
+        text-transform: uppercase;
+    }
+
     display: flex;
     padding: 20px;
 
     h1 {
         margin: auto;
-        font-family: $fjalla;
+        font-family: $title;
     }
 }
 
@@ -56,23 +77,41 @@ header {
     background: rgba(0, 0, 0, 0.658);
     display: flex;
     transition: .3s ease;
-    padding: 20px 15px 20px 10px;
+    padding: 20px 15px 16px 10px;
+
+
+    @if $uppercase {
+        text-transform: uppercase;
+    }
+    .bar {
+        background: white;
+        height: 1.8em;
+        width: .08em;
+        color: transparent;
+        transform: translateY(7%);
+        margin: 0 5px;
+    }
     a {
         padding: 0 10px;
         color: white;
         text-decoration: none;
-        font-family: $fjalla;
+        font-family: $title;
         transition: .3s ease;
 
-        &:hover {
+        &:hover, &:active{
             text-decoration: none;
 
             color: rgba(255, 255, 255, 0.795);
+
+            i {
+                color: rgba(255, 255, 255, 0.795);
+            }
         }
 
         font-size: 1.5em;
 
         i {
+            transition: .3s ease;
             font-size: xx-large;
         }
     }
@@ -80,8 +119,9 @@ header {
 }
 
 .topmargin {
-    padding: 110px 10px 0 10px;
+    padding-top: 110px;
 }
+
 
 .grid-item {
     max-width: 400px; 
@@ -89,9 +129,10 @@ header {
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
     transition: .5s ease;
-    margin: 10px 0;
+    margin: 10px 0px;
     border: .5rem solid white;
     overflow: hidden;
+
 
     img {
         filter: grayscale(100%);
@@ -100,7 +141,7 @@ header {
         overflow: hidden;
     }
 
-    &:hover {
+    &:hover, &:active {
         img {
             filter:grayscale(0%);
             transform: scale(1.025);
@@ -121,4 +162,12 @@ header {
         opacity: 1; 
      } 
 } 
+
+@media screen and (max-width: 460px) {
+    .grid-item {
+        max-width: 390px;
+        margin-left: 10px;
+    }
+
+}
 // .grid-item--width2 { width: 400px; }

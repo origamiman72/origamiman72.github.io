@@ -976,11 +976,6 @@ header h1 {
   overflow: visible !important;
 }
 
-#experience svg:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 #experience .group {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -32,6 +32,9 @@ ul {
     left: 0px !important;
     right: auto !important;
   }
+  .topmargin {
+    padding-top: 200px !important;
+  }
 }
 
 header {
@@ -86,12 +89,12 @@ header h1 {
   font-size: 1.5em;
 }
 
-.links a:hover {
+.links a:hover, .links a:active {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.795);
 }
 
-.links a:hover i {
+.links a:hover i, .links a:active i {
   color: rgba(255, 255, 255, 0.795);
 }
 
@@ -129,13 +132,13 @@ header h1 {
   overflow: hidden;
 }
 
-.grid-item:hover {
+.grid-item:hover, .grid-item:active {
   z-index: 2;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.grid-item:hover img {
+.grid-item:hover img, .grid-item:active img {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   -webkit-transform: scale(1.025);

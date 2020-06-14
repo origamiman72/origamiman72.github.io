@@ -73,8 +73,13 @@ html {
 
   .resume {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 17px;
+    right: 40px;
+
+    a {
+      text-decoration: none;
+
+    }
   }
   
   .orange {
@@ -790,9 +795,9 @@ html {
       transition: .2s ease;
       overflow: visible !important;
       
-      &:hover {
-        transform: scale(1.1);
-      }
+      // &:hover {
+      //   transform: scale(1.1);
+      // }
     }
 
     .group {
@@ -872,7 +877,7 @@ html {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-    }
+  }
     .interest {
       max-width: 33em;
       min-width: 25em;
