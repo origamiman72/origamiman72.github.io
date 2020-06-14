@@ -342,6 +342,7 @@ html {
   
   }
 
+
       $breakpoint-tablet: 768px;
       @media screen and (max-width: 550px) {
         .card, .interest {
@@ -417,6 +418,14 @@ html {
       box-shadow: 0 7px 7px black;
       border: white solid 1px;
       transform: translateY(-2%);
+    }
+
+    @media screen and (max-width: 550px) {
+        border: rgb(39,40,72) solid 2px;
+
+      &:hover {
+        border: white solid 2px;
+      }
     }
 
     &:active.clickable {
@@ -896,6 +905,9 @@ html {
         transform: translateY(-2%);
       }
       
+    @media screen and (max-width: 550px) {
+        border: rgb(39,40,72) solid 2px;
+    }
       .btn {
         margin-right: 1em;
         padding: .75em;

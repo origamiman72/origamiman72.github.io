@@ -365,6 +365,15 @@ header h1 {
           transform: translateY(-2%);
 }
 
+@media screen and (max-width: 550px) {
+  .card {
+    border: #272848 solid 2px;
+  }
+  .card:hover {
+    border: white solid 2px;
+  }
+}
+
 .card:active.clickable {
   -webkit-box-shadow: 0 0px 0px black;
           box-shadow: 0 0px 0px black;
@@ -1075,6 +1084,12 @@ header h1 {
           box-shadow: 0 7px 7px black;
   -webkit-transform: translateY(-2%);
           transform: translateY(-2%);
+}
+
+@media screen and (max-width: 550px) {
+  #interests .interest {
+    border: #272848 solid 2px;
+  }
 }
 
 #interests .interest .btn {
