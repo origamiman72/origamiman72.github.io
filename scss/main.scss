@@ -907,6 +907,10 @@ html {
       
     @media screen and (max-width: 550px) {
         border: rgb(39,40,72) solid 2px;
+
+        &:hover {
+          border: 2px white solid;
+        }
     }
       .btn {
         margin-right: 1em;

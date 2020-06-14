@@ -1090,6 +1090,9 @@ header h1 {
   #interests .interest {
     border: #272848 solid 2px;
   }
+  #interests .interest:hover {
+    border: 2px white solid;
+  }
 }
 
 #interests .interest .btn {
