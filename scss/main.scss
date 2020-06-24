@@ -376,7 +376,7 @@ html {
           #skill-content {
             display: flex;
             flex-flow: row wrap;
-            justify-content: flex-start;
+            justify-content: space-around;
           }
           #skills {
             margin-left: 0;
@@ -396,6 +396,12 @@ html {
             }
           }
 
+        }
+        @media screen and (max-width: 486px) {
+
+          #skill-content {
+            justify-content: flex-start !important;
+           }
         }
 
   .card {
@@ -847,6 +853,10 @@ html {
     li {
       font-size: large;
       padding: 2em;
+
+      @media screen and (max-width: 1000px) { 
+        padding: 2em 1.75em;
+      }
 
       &:first-child {
         padding-left: 0;
