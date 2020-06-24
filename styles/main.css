@@ -312,8 +312,9 @@ header h1 {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   #skills {
     margin-left: 0;
@@ -968,6 +969,11 @@ header h1 {
   color: #a6a7c2;
   font-size: medium;
   padding: .5em 0;
+}
+
+#experience .secondary-header {
+  font-size: large;
+  color: #a6a7c2;
 }
 
 #experience .icon {

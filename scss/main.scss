@@ -376,7 +376,7 @@ html {
           #skill-content {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: flex-start;
           }
           #skills {
             margin-left: 0;
@@ -791,9 +791,15 @@ html {
       padding: .5em 0;
     }
 
+    .secondary-header {
+      font-size: large;
+      color: rgb(166, 167, 194);
+    }
+
     .icon {
       fill: $accent;
     }
+    
     svg {
       fill: $accent !important;
       height: 60px !important;
