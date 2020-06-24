@@ -30,6 +30,16 @@ h2, h3 {
   font-family: 'Fjalla One', sans-serif;
 }
 
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 /* Landing Page */
 .topPage {
   color: white;
@@ -335,9 +345,9 @@ header h1 {
 
 @media screen and (max-width: 486px) {
   #skill-content {
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
   }
 }
 
@@ -363,6 +373,8 @@ header h1 {
   border-radius: 10px;
   -webkit-transition: .25s ease;
   transition: .25s ease;
+  text-decoration: none;
+  color: white;
 }
 
 .card:hover {
@@ -371,6 +383,8 @@ header h1 {
   border: white solid 1px;
   -webkit-transform: translateY(-2%);
           transform: translateY(-2%);
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 550px) {
@@ -1121,6 +1135,14 @@ header h1 {
 
 #interests .interest h2 {
   padding-bottom: .5em;
+}
+
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url("./styles/cs.woff") format("woff");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Footer */
