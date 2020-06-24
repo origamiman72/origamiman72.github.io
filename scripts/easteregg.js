@@ -10,13 +10,15 @@ function updateEgg() {
         // document.body.style.background = "linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet)";
         $("body").css("background", "linear-gradient(to right, red,orange , yellow, green, cyan, blue, violet)");
         $(".container").css("background", "linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet)")
-        $(".container").css("font-family", "Comic Sans MS")
-        $("h1").css("font-family", "Comic Sans MS")
-        $("h2").css("font-family", "Comic Sans MS")
-        $("h3").css("font-family", "Comic Sans MS")
-        $("p").css("font-family", "Comic Sans MS")
-        $("h4").css("font-family", "Comic Sans MS")
-        $("button").css("font-family", "Comic Sans MS")
+        $(".container").css("font-family", "Comic Sans MS, Comic Sans")
+        $("h1").css("font-family", "Comic Sans MS, Comic Sans")
+        $("h2").css("font-family", "Comic Sans MS, Comic Sans")
+        $("h3").css("font-family", "Comic Sans MS, Comic Sans")
+        $("p").css("font-family", "Comic Sans MS, Comic Sans")
+        $("h4").css("font-family", "Comic Sans MS, Comic Sans")
+        $("a").css("font-family", "Comic Sans MS, Comic Sans")
+        $("#landingText").css("font-family", "Comic Sans MS, Comic Sans")
+        $("button").css("font-family", "Comic Sans MS, Comic Sans")
         $(".container").css("color", "black")
         $("header").css("background", "linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet)")
         $("nav").css("background", "linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet)")
@@ -24,6 +26,8 @@ function updateEgg() {
         $(".project").css("background", "linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet)")
         $("#landing").css("background", "linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet)")
         $("#landingText h1").replaceWith("<h1>Hi, I'm Abhik Ahuja, <br> I regret this<span class=\"orange\">.</span></h1>")
+        $(".navbar-brand").css("font-family", "Comic Sans MS, Comic Sans");
+
     } else {
         $("body").css("background", "")
         $(".container").css("background", "")
@@ -40,7 +44,9 @@ function updateEgg() {
         $(".card").css("background", "")
         $(".project").css("background", "")
         $("#landing").css("background", "")
-
+        $("a").css("font-family", "")
+        $("#landingText").css("font-family", "")
+        $(".navbar-brand").css("font-family", "");
         $("#landingText h1").replaceWith("<h1>Hi, I'm Abhik Ahuja, a Computer Science and Mathematics student at UC Berkeley<span class=\"orange\">.</span></h1>")
     }
 }
