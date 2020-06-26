@@ -86,10 +86,10 @@ button:active {
   -webkit-transition: .4s ease;
   transition: .4s ease;
   position: absolute;
-  width: 400px;
-  height: 400px;
-  -webkit-transform: translateY(-409px) translateX(3px);
-          transform: translateY(-409px) translateX(3px);
+  width: 380px;
+  height: 380px;
+  -webkit-transform: translateY(-389px) translateX(3px);
+          transform: translateY(-389px) translateX(3px);
   border-radius: 3px;
   color: white;
   display: -webkit-box;

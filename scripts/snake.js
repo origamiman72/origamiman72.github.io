@@ -59,32 +59,37 @@ function pause() {
     }
     started = true;
     // $("#start").replaceWith("<i class=\"fas fa-pause\"></i>");
+    $(".pause").removeClass("active");
 }
 
 function moveLeft() {
     moveX = -1;
     moveY = 0;
-    started = true;
-    paused = false;
+    if (paused) {
+        pause();
+    }
 }
 function moveRight() {
     moveX = 1;
     moveY = 0;
-    started = true;
-    paused = false;
+    if (paused) {
+        pause();
+    }
 }
 function moveUp() {
     moveX = 0;
     moveY = -1;
-    started = true;
-    paused = false;
+    if (paused) {
+        pause();
+    }
 }
 
 function moveDown() {
     moveX = 0;
     moveY = 1;
-    started = true;
-    paused = false;
+    if (paused) {
+        pause();
+    }
 }
 
 function keyDownEvent(e) {
@@ -115,7 +120,6 @@ function keyDownEvent(e) {
 function draw() {
 
     if (!paused) {
-        $(".pause").removeClass("active");
         darkened = false;
 
         snakeX += moveX;
