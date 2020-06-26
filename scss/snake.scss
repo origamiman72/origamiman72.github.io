@@ -1,0 +1,108 @@
+$background: rgb(31, 32, 65);
+
+body {
+    background: $background;
+}
+
+.game {
+    // display: flex;
+    margin: 20px auto;
+
+    h2 {
+        color: white;
+    }
+
+}
+
+header {
+    padding: 15px;
+    text-transform: none;
+
+    a {
+        text-decoration: none !important;
+        color: white !important;
+
+    }
+    
+    i {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        font-size: 30px;
+    }
+}
+
+#gameCanvas {
+    // margin: auto;
+    border: white solid 3px;
+    border-radius: 3px;
+    // box-shadow: 0px 10px 10px black;
+}
+
+.row {
+    padding: 0 4px;
+    padding-top: 10px;
+}
+
+button {
+    background: $background;
+    color: white;
+    padding: 15px 20px !important;
+    border: solid white 3px;
+    border-radius: 10px;
+    outline: none !important;
+    margin: 10px;
+    box-shadow: 0px 10px 10px black;
+    transition: .1s ease;
+
+    &:active {
+        box-shadow: 0px 0px 10px black;
+        transform: translateY(5px);
+    }
+
+}
+
+.game-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-right: 0;
+}
+
+.controls {
+    color: white;
+    max-width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0;
+    padding: 20px 0;
+    font-size: 1.2em;
+    border-top: rgb(39,40,72) solid 2px;
+}
+
+.pause {
+    transition: .4s ease;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform: translateY(-409px) translateX(3px);
+    border-radius: 3px;
+    color: white;
+    display: flex;
+
+    i {
+        margin: auto;
+        font-size: 200px;
+        opacity: 0;
+        transition: .2s ease;
+    }
+
+    &.active {
+        background: rgba(0, 0, 0, 0.37);
+        i {
+            font-size: 50px;
+            opacity: 100;
+        }
+    }
+
+}
