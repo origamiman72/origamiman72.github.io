@@ -39,7 +39,8 @@ var length = initialLength;
 var snakeTrail = [];
 var snakeX = snakeY = 10;
 
-var gridSize = tileSize = 20;
+var tileSize = 20;
+var gridSize = 19;
 var moveX = moveY = 0;
 
 var goalX = (goalY = 15);
