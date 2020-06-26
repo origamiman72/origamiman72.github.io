@@ -50,6 +50,7 @@ var goalColor = "rgb(244, 157, 55)";
 var started = false;
 
 var darkened = false;
+var restarting = false;
 
 function pause() {
     paused = !paused;
@@ -160,6 +161,7 @@ function draw() {
                 length = initialLength;
                 paused = true;
                 if (started) {
+                    restarting = true;
                     reset();
                 }
             }
@@ -177,7 +179,9 @@ function draw() {
         }
         updateScore();
     } else {
-        $(".pause").addClass("active");
+        if (!restarting) {
+            $(".pause").addClass("active");
+        }
     }
 }
 
@@ -207,6 +211,7 @@ function reset() {
     //     ctx.fillRect(0, 0, canvas.width, canvas.height);
     // }, 800);
     setTimeout(() => {
+        restarting = false;
         paused = false;
     }, 800);
     // for (var i = 0; i < snakeTrail.length; i ++) {
