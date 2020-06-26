@@ -53,6 +53,9 @@ var darkened = false;
 
 function pause() {
     paused = !paused;
+    if (!started) {
+        moveRight();
+    }
     started = true;
     // $("#start").replaceWith("<i class=\"fas fa-pause\"></i>");
 }
