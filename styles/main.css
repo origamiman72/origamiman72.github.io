@@ -1167,4 +1167,8 @@ footer .links a {
   padding: 5px;
   color: transparent;
 }
+
+footer #privacy {
+  color: white !important;
+}
 /*# sourceMappingURL=main.css.map */

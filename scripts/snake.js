@@ -40,7 +40,7 @@ var snakeTrail = [];
 var snakeX = snakeY = 10;
 
 var tileSize = 20;
-var gridSize = 19;
+var gridSize = 18;
 var moveX = moveY = 0;
 
 var goalX = (goalY = 15);
@@ -52,6 +52,9 @@ var started = false;
 
 var darkened = false;
 var restarting = false;
+
+var highScore = getCookie("highScore");
+$("#high-score").text(highScore);
 
 function pause() {
     paused = !paused;
@@ -141,6 +144,7 @@ function draw() {
             length++;
             goalX = Math.floor(Math.random() * gridSize);
             goalY = Math.floor(Math.random() * gridSize);
+            updateScore();
         }
 
         ctx.fillStyle = background;
@@ -168,6 +172,7 @@ function draw() {
                 if (started) {
                     restarting = true;
                     reset();
+                    updateScore();
                 }
             }
         }
@@ -182,7 +187,6 @@ function draw() {
         while (snakeTrail.length > length) {
             snakeTrail.shift();
         }
-        updateScore();
     } else {
         if (!restarting) {
             $(".pause").addClass("active");
@@ -192,6 +196,11 @@ function draw() {
 
 function updateScore() {
     $("#score").text(length - initialLength);
+    if (length - initialLength > highScore) {
+        highScore = length - initialLength;
+        $("#high-score").text(highScore);
+        setCookie("highScore", highScore);
+    }
 }
 
 function reset() {
@@ -236,4 +245,26 @@ function reset() {
     //         length = initialLength;
     //     }
     // }
+}
+
+function setCookie(name, value, days) {
+    var d = new Date();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires;
+}
+  
+function getCookie(cname) {
+var name = cname + "=";
+var ca = document.cookie.split(';');
+for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+    c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+    return c.substring(name.length, c.length);
+    }
+}
+return 0;
 }

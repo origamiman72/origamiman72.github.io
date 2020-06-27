@@ -8,6 +8,7 @@ body {
 
 .game h2 {
   color: white;
+  font-size: 1.75em;
 }
 
 header {
@@ -44,7 +45,7 @@ button {
   border: solid white 3px;
   border-radius: 10px;
   outline: none !important;
-  margin: 10px;
+  margin: 5px;
   -webkit-box-shadow: 0px 10px 10px black;
           box-shadow: 0px 10px 10px black;
   -webkit-transition: .05s ease;
@@ -69,12 +70,11 @@ button:active {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 15px;
-  padding-right: 0;
 }
 
 .controls {
   color: white;
-  max-width: 400px;
+  max-width: 360px;
   font-family: 'Open Sans', sans-serif;
   margin: 20px 0;
   padding: 20px 0;
@@ -86,10 +86,10 @@ button:active {
   -webkit-transition: .4s ease;
   transition: .4s ease;
   position: absolute;
-  width: 380px;
-  height: 380px;
-  -webkit-transform: translateY(-389px) translateX(3px);
-          transform: translateY(-389px) translateX(3px);
+  width: 360px;
+  height: 360px;
+  -webkit-transform: translateY(-369px) translateX(3px);
+          transform: translateY(-369px) translateX(3px);
   border-radius: 3px;
   color: white;
   display: -webkit-box;
@@ -112,5 +112,10 @@ button:active {
 .pause.active i {
   font-size: 50px;
   opacity: 100;
+}
+
+a {
+  outline: none !important;
+  text-decoration: none !important;
 }
 /*# sourceMappingURL=snake.css.map */

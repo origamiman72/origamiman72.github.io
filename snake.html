@@ -27,13 +27,16 @@
         <div class="container">
             <div class="game">
                 <div class="game-top-bar">
-                    <h2>Score: <span id="score"></spane></h2>
+                    <div class="scores">
+                        <h2>Score: <span id="score">0</spane></h2>
+                        <h2>High Score: <span id="high-score">0</spane></h2>
+                    </div>
                     <button onclick="pause()">
                         <i class="fas fa-pause"></i>
                     </button>
                 </div>
                 <div class="canvas">
-                    <canvas id="gameCanvas" width="380" height="380"></canvas>
+                    <canvas id="gameCanvas" width="360" height="360"></canvas>
                     <div class="pause clickable" onclick="pause()">
                         <i id="start" class="fas fa-play"></i>
                         <!-- <i class="fas fa-pause"></i> -->
