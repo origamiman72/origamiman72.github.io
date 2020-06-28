@@ -1,18 +1,18 @@
-# [abhikahuja.com](abhikahuja.com)
-My personal website, accessible from [abhikahuja.com](abhikahuja.com) or [origamiman72.github.io](origamiman72.github.io)
+# [abhikahuja.com](htps://abhikahuja.com)
+My personal website, accessible from [abhikahuja.com](https://abhikahuja.com) or [origamiman72.github.io](https://origamiman72.github.io)
 
 ## Pages
 Main
-* [abhikahuja.com](abhikahuja.com)
+* [abhikahuja.com](index.html)
 
 Photography
-* [abhikahuja.com/photography](abhikahuja.com/photography)
+* [abhikahuja.com/photography](photography.html)
 
 Snake
-* [abhikahuja.com/snake](abhikahuja.com/snake)
+* [abhikahuja.com/snake](snake.html)
 
 Privacy Policy
-* [abhikahuja.com/privacy](abhikahuja.com/privacy)
+* [abhikahuja.com/privacy](privacy.html)
 
 ## Languages/Libraries Used
 
