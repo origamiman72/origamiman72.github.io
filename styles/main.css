@@ -384,10 +384,10 @@ header h1 {
 }
 
 .card.clickable:hover {
-  -webkit-box-shadow: 0 7px 7px black;
-          box-shadow: 0 7px 7px black;
-  -webkit-transform: translateY(-2%);
-          transform: translateY(-2%);
+  -webkit-box-shadow: 0 10px 10px black;
+          box-shadow: 0 10px 10px black;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 @media screen and (max-width: 550px) {
@@ -1111,15 +1111,11 @@ header h1 {
   -webkit-transition: .25s ease;
   transition: .25s ease;
   border-radius: 10px;
-  border: 1px transparent solid;
+  border: 2px #272848 solid;
 }
 
 #interests .interest:hover {
-  border: 1px white solid;
-  -webkit-box-shadow: 0 7px 7px black;
-          box-shadow: 0 7px 7px black;
-  -webkit-transform: translateY(-2%);
-          transform: translateY(-2%);
+  border: 2px white solid;
 }
 
 @media screen and (max-width: 550px) {

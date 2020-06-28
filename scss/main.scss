@@ -442,8 +442,8 @@ html {
 
     &.clickable{
       &:hover {
-        box-shadow: 0 7px 7px black;
-        transform: translateY(-2%);
+        box-shadow: 0 10px 10px black;
+        transform: translateY(-3%);
 
       }
     }
@@ -935,12 +935,12 @@ html {
       flex-grow: 1;
       transition: .25s ease;
       border-radius: 10px;
-        border: 1px transparent solid;
+        border: 2px rgb(39,40,72) solid;
 
       &:hover {
-        border: 1px white solid;
-        box-shadow: 0 7px 7px black;
-        transform: translateY(-2%);
+        border: 2px white solid;
+        // box-shadow: 0 10px 10px black;
+        // transform: translateY(-10px);
       }
       
     @media screen and (max-width: 550px) {
