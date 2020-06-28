@@ -418,7 +418,7 @@ html {
 
   .card {
     background: $background;
-    max-width: 35em;
+    max-width: 33em;
     min-width: 22em;
     display: flex;
     flex-flow: column nowrap;
@@ -427,7 +427,7 @@ html {
     margin: 0 .5em;
     margin-bottom: 2em;
     padding: 1.5em;
-    border: transparent solid 1px;
+    border: rgb(39,40,72) solid 2px;
     border-radius: 10px;
     transition: .25s ease;
     text-decoration: none;
@@ -435,11 +435,17 @@ html {
 
 
     &:hover {
-      box-shadow: 0 7px 7px black;
-      border: white solid 1px;
-      transform: translateY(-2%);
+      border: white solid 2px;
       text-decoration: none;
       color: white;
+    }
+
+    &.clickable{
+      &:hover {
+        box-shadow: 0 7px 7px black;
+        transform: translateY(-2%);
+
+      }
     }
 
     @media screen and (max-width: 550px) {

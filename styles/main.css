@@ -353,7 +353,7 @@ header h1 {
 
 .card {
   background: #1f2041;
-  max-width: 35em;
+  max-width: 33em;
   min-width: 22em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +369,7 @@ header h1 {
   margin: 0 .5em;
   margin-bottom: 2em;
   padding: 1.5em;
-  border: transparent solid 1px;
+  border: #272848 solid 2px;
   border-radius: 10px;
   -webkit-transition: .25s ease;
   transition: .25s ease;
@@ -378,13 +378,16 @@ header h1 {
 }
 
 .card:hover {
-  -webkit-box-shadow: 0 7px 7px black;
-          box-shadow: 0 7px 7px black;
-  border: white solid 1px;
-  -webkit-transform: translateY(-2%);
-          transform: translateY(-2%);
+  border: white solid 2px;
   text-decoration: none;
   color: white;
+}
+
+.card.clickable:hover {
+  -webkit-box-shadow: 0 7px 7px black;
+          box-shadow: 0 7px 7px black;
+  -webkit-transform: translateY(-2%);
+          transform: translateY(-2%);
 }
 
 @media screen and (max-width: 550px) {
