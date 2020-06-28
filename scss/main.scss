@@ -416,6 +416,19 @@ html {
            }
         }
 
+  .empty {
+    max-width: 33em;
+    min-width: 22em;
+
+    flex: 1 1;
+    margin: 0 .5em;
+    margin-bottom: 2em;
+    padding: 1.5em;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
   .card {
     background: $background;
     max-width: 33em;
