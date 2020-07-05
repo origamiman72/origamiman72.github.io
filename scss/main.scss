@@ -388,7 +388,19 @@ html {
           #skill-content {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: space-between;
+          }
+
+          .long-group {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+
+
+            .second-ul {
+              margin-left: 40px;
+            }
           }
           #skills {
             margin-left: 0;
@@ -409,12 +421,12 @@ html {
           }
 
         }
-        @media screen and (max-width: 486px) {
+        // @media screen and (max-width: 486px) {
 
-          #skill-content {
-            justify-content: space-between !important;
-           }
-        }
+        //   #skill-content {
+        //     justify-content: space-between !important;
+        //    }
+        // }
 
   .empty {
     max-width: 33em;
