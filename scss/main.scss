@@ -400,6 +400,7 @@ html {
 
             .second-ul {
               margin-left: 40px;
+              margin-right: 40px;
             }
           }
           #skills {
@@ -418,15 +419,20 @@ html {
                 }
               }
             }
+
           }
 
         }
-        // @media screen and (max-width: 486px) {
+        @media screen and (max-width: 486px) {
 
-        //   #skill-content {
-        //     justify-content: space-between !important;
-        //    }
-        // }
+          #skill-content {
+            justify-content: space-between !important;
+           }
+
+           .long-skill-group {
+             width: 100%;
+           }
+        }
 
   .empty {
     max-width: 33em;

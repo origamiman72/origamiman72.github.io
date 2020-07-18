@@ -343,6 +343,7 @@ header h1 {
   }
   .long-group .second-ul {
     margin-left: 40px;
+    margin-right: 40px;
   }
   #skills {
     margin-left: 0;
@@ -359,6 +360,17 @@ header h1 {
   }
   .skill-group ul li:before {
     content: '> ';
+  }
+}
+
+@media screen and (max-width: 486px) {
+  #skill-content {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .long-skill-group {
+    width: 100%;
   }
 }
 
