@@ -424,10 +424,10 @@ header h1 {
 }
 
 .card.clickable:hover {
-  -webkit-box-shadow: 0 10px 10px black;
-          box-shadow: 0 10px 10px black;
-  -webkit-transform: translateY(-3%);
-          transform: translateY(-3%);
+  -webkit-box-shadow: 0 15px 0px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 0px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 @media screen and (max-width: 550px) {

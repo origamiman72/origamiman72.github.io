@@ -172,5 +172,9 @@ header h1 {
     max-width: 390px;
     margin-left: 10px;
   }
+  .grid-item img {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

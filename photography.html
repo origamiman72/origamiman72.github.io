@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 
-    <script async src="https://ackee.abhikahuja.com/tracker.js" data-ackee-server="https://ackee.abhikahuja.com" data-ackee-domain-id="43d48a28-d1d3-484c-b420-56af168013ce"></script>
     <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 	<script>
 	(function(f, a, t, h, o, m){
@@ -30,13 +29,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
     <!-- Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -60,12 +53,12 @@
     <main>
         <div class="topmargin">
             <div class="photos grid" style="position: relative; height: 0px;">
-                <!-- <img src="images/photography/losangeles-3.jpg" class="grid-item" alt="">
-                <img src="images/photography/losangeles-3.jpg" class="grid-item" alt="">
-                <img src="images/photography/losangeles-3.jpg" class="grid-item" alt="">
-                <img src="images/photography/losangeles-3.jpg" class="grid-item" alt=""> -->
+                <!-- TODO: Load this dynamically from folder -->
                 <div class="grid-item">
                     <img src="/images/photography/losangeles-3.jpg">
+                </div>
+                <div class="grid-item">
+                    <img src="/images/photography/sf%20from%20bridge.jpg">
                 </div>
                 <div class="grid-item">
                     <img src="/images/photography/beach1.jpg">
@@ -143,39 +136,16 @@
 </body>
 
 <script>
-    // var folder = "images/photography";
-
-// $.ajax({
-//     url : folder,
-//     success: function (data) {
-//         $(data).find("a").attr("href", function (i, val) {
-//             if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-//                 $(".photos").append( "<div class='grid-item'><img src='"+ val +"'></div>" );
-//             } 
-//         });
-//     }
-// });
-var $grid = $('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 200,
-  gutter: 10,
-  fitWidth: true
-});
-$grid.imagesLoaded().progress(function() {
-  $grid.masonry('layout');
-});
-
-// var $grid = $('.grid').imagesLoaded.progress(( function() {
-//   // init Masonry after all images have loaded
-//   $grid.masonry({
-//     // options...
-//     itemSelector: '.grid-item',
-//     columnWidth: 200,
-//     gutter: 10,
-//     fitWidth: true
-//   });
-// });
+    var $grid = $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200,
+    gutter: 10,
+    fitWidth: true
+    });
+    $grid.imagesLoaded().progress(function() {
+    $grid.masonry('layout');
+    });
 </script>
 
 </html>

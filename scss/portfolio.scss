@@ -4,14 +4,8 @@ html {
 
   $background: white;
   $accent: rgb(244, 157, 55);
-//   $title: 'Fjalla One', sans-serif;
-//   $title: 'Inconsolata', monospace;
   $title: 'Cutive mono', monospace;
-//   $title: 'Quicksand', sans-serif;
-    // $title: 'Source Code Pro', monospace;
-    // $title: 'DM Mono', monospace;
   $uppercase: false;
-//   $uppercase: true;
   
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
   @media (prefers-reduced-motion: reduce) {
@@ -169,5 +163,11 @@ header {
         margin-left: 10px;
     }
 
+    .grid-item {
+
+        img {
+            filter: grayscale(0%);
+        }
+    }
 }
 // .grid-item--width2 { width: 400px; }

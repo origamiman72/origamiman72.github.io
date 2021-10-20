@@ -473,9 +473,8 @@ html {
 
     &.clickable{
       &:hover {
-        box-shadow: 0 10px 10px black;
-        transform: translateY(-3%);
-
+        box-shadow: 0 15px 0px 0px rgba(0, 0, 0, 0.5);
+        transform: translateY(-15px);
       }
     }
 
