@@ -1,0 +1,51 @@
+body {
+    background: #1f2041;
+}
+
+header {
+    padding: 15px;
+    text-transform: none;
+}
+header a {
+    text-decoration: none !important;
+    color: white !important;
+}
+header i {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    font-size: 30px;
+}
+
+.date {
+    font-family: "Fjalla One", sans-serif;
+    color: #a6a7c2;
+    font-size: large;
+}
+
+.content {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+h5 {
+    font-family: "Fjalla One", sans-serif;
+}
+
+.inline-link {
+    text-decoration: underline;
+}
+.inline-link:hover {
+    color: #a6a7c2;
+}
+
+.half-img {
+    max-width: 600px;
+    border: white 4px solid;
+    border-radius: 8px;
+    box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.half-height {
+    max-height: 300px;
+}
