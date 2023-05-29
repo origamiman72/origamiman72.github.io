@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=Inconsolata&family=PT+Serif&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&family=Source+Sans+Pro:wght@400;600&family=Space+Mono&display=swap");
+html {
+  background-color: #FAFFFD;
+  color: rgb(54, 54, 54);
+  font-family: sans-serif;
+  font-family: "Source Sans Pro";
+  transition: 0.5s ease;
+  line-height: 1.4em;
+  font-size: 1.05em;
+}
+html h1,
+html h2 {
+  font-family: "Bitter";
+}
+html .wrapper {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+html .container {
+  max-width: 1200px;
+  padding: 0px 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  flex-grow: 1;
+  margin: auto;
+}
+html .bold {
+  font-weight: 600;
+}
+html body {
+  margin: 0px;
+  min-height: 100vh;
+}
+html nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+html nav .navbar-brand {
+  font-family: "Bitter";
+  font-size: 1.2em;
+  font-weight: 500;
+}
+html nav .navbar-brand a {
+  color: #0d0f73;
+}
+html nav .navbar-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+html nav .navbar-nav .nav-item {
+  margin: 0px 15px;
+  padding: 5px 5px;
+}
+html nav .navbar-nav .active {
+  color: #0d0f73;
+}
+html .accent {
+  color: #0d0f73;
+}
+html a {
+  text-decoration: none;
+  color: #4265c3;
+  filter: brightness(100%);
+  transition: 0.25s ease-out;
+}
+html a:hover {
+  filter: brightness(80%);
+  transition: 0.25s ease-out;
+}
+html .center {
+  display: flex;
+  justify-content: space-evenly;
+}
+html .col {
+  flex-flow: column;
+}
+html footer {
+  padding: 30px;
+  background-color: #e8f0ed;
+  flex-grow: 0;
+  margin-top: auto;
+  display: flex;
+  flex-flow: row;
+}
+html footer .footer-items {
+  margin: auto;
+}
+html footer .footer-text {
+  display: flex;
+  flex-flow: row;
+}
+html footer .footer-text a,
+html footer .footer-text p {
+  margin: auto;
+}
+html footer .icons {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+html footer .icons a {
+  text-decoration: none;
+}
+html footer .icons .icon {
+  color: rgb(54, 54, 54);
+  margin: 0px 5px;
+}
+html footer .icons .icon:hover {
+  color: #0d0f73;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  color: #4265c3;
+}
+a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d0f73;
+  transform-origin: bottom right;
+  transform: scaleX(1);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4265c3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a.no-line::after {
+  display: none;
+}
+
+.no-line a::after {
+  display: none;
+}
+
+.grid-item {
+  max-width: 300px;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: 0.5s ease;
+  margin: 5px 0px;
+  border: 0.5rem solid white;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.grid-item img {
+  max-width: 300px;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: 1s ease;
+}
+
+.grid {
+  margin: auto;
+}
+
+.fade-in {
+  -webkit-animation: fadein 0.75s both;
+  animation: fadein 0.75s both;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.title {
+  font-family: "Bitter";
+}
+
+.banner {
+  width: 100%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.banner-pic {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.left {
+  padding: 20px;
+  align-self: start;
+}
+.left .profile-pic {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.right {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,33 @@
+.publications {
+  margin-bottom: 30px;
+}
+
+.project {
+  display: flex;
+  flex-flow: row;
+  margin: 5px 0px;
+}
+.project .project-image {
+  align-items: center;
+  margin: 5px;
+}
+.project .project-image img {
+  width: 200px;
+}
+.project .project-text {
+  padding: 15px;
+}
+.project .project-text .project-title {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.project .project-text .project-authors {
+  font-size: 0.9em;
+}
+.project .project-text .project-venue {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=projects.css.map */

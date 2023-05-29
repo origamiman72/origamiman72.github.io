@@ -1,0 +1,41 @@
+---
+---
+
+.publications {
+    margin-bottom: 30px;
+}
+
+.project {
+    display: flex;
+    flex-flow: row;
+    margin: 5px 0px;
+
+    .project-image {
+        align-items: center;
+        margin: 5px;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .project-text {
+        padding: 15px;
+
+        .project-title {
+            margin: 0px;
+            margin-bottom: 5px;
+        }
+
+        .project-authors {
+            font-size: .90em;
+        }
+        .project-venue {
+            font-size: .90em;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+    }
+
+}
+

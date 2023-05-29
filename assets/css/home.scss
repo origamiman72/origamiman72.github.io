@@ -1,0 +1,39 @@
+---
+---
+@import "main";
+
+.title {
+    font-family: $titlefont;
+}
+.banner {
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.banner-pic {
+    // margin: 0px 50px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.left {
+    padding: 20px;
+    align-self: start;
+
+    .profile-pic {
+        max-width: 200px;
+        border-radius: 50%;
+    }
+
+}
+
+.right {
+    padding: 20px;
+}

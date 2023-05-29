@@ -1,0 +1,6 @@
+- title: "Nerfstudio: A Framework for Neural Radiance Field Development"
+  authors: "Matthew Tancik*, Ethan Weber*, Evonne Ng*, Ruilong Li, Brent Yi, Justin Kerr, Terrance Wang, Alexander Kristoffersen, Jake Austin, Kamyar Salahi, Abhik Ahuja, David McAllister, Angjoo Kanazawa"
+  description: A modular framework for Neural Radiance Fields.
+  venue: ACM SIGGRAPH 2023
+  url: https://nerf.studio
+  image: /assets/images/projects/nerfstudio.png

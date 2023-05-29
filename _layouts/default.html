@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- This website was made by Abhik Ahuja. If you need to contact me, feel free to send me
+    an e-mail at ahujaabhik (at) proton (dot) me -->
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+        (function (f, a, t, h, o, m) {
+            a[h] = a[h] || function () {
+                (a[h].q = a[h].q || []).push(arguments)
+            };
+            o = f.createElement('script'),
+                m = f.getElementsByTagName('script')[0];
+            o.async = 1; o.src = t; o.id = 'fathom-script';
+            m.parentNode.insertBefore(o, m)
+        })(document, window, '//fathom.abhikahuja.com/tracker.js', 'fathom');
+        fathom('set', 'siteId', 'IMPVP');
+        fathom('trackPageview');
+    </script>
+    <!-- / Fathom -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Abhik Ahuja - Software Developer">
+    <meta name="description" content="{{ site.data.main.shorttext }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abhik Ahuja - Software Developer">
+    <meta property="og:description" content="{{ site.data.main.shorttext }}">
+    <meta property="og:image" content="images/bg.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Abhik Ahuja - Software Developer">
+    <meta property="twitter:description" content="{{ site.data.main.shorttext }}">
+    <meta property="twitter:image" content="/images/bg.png">
+
+    <!-- Stylesheets, Fonts, etc. -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/31fdf04205.js" crossorigin="anonymous"></script>
+
+    <!-- Scripts -->
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <div class="wrapper" />
+
+    <header>
+        {% include navigation.html %}
+    </header>
+    <main>
+        <div class="container fade-in">
+            {{ content }}
+        </div>
+    </main>
+
+    <!-- Footer (TODO: add contact/links) -->
+    <footer>
+        <div class="footer-items col center">
+            <!-- <h2 class="contactTitle">Contact Me</h2> -->
+            <div class="icons row center">
+                {% for item in site.data.links.links %}
+                <a href="{{ item.url }}">
+                    <i class="icon {{ item.icon }}"></i>
+                </a>
+
+                {% endfor %}
+            </div>
+            <div class="footer-text">
+                <p> © 2023 Abhik Ahuja </p>
+            </div>
+            <div class="footer-text">
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

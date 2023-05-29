@@ -1,0 +1,18 @@
+email: "ahujaabhik (at) proton (dot) me"
+instagram: "https://instagram.com/abhiktakespictures"
+links:
+- url: "mailto:ahujaabhik@proton.me"
+  name: email
+  icon: far fa-envelope
+- url: "https://github.com/origamiman72"
+  name: "github"
+  icon: fab fa-github
+- url: "https://fosstodon.org/@origamiman72"
+  name: "mastodon"
+  icon: fab fa-mastodon
+- url: "https://instagram.com/abhiktakespictures"
+  name: instagram
+  icon: fab fa-instagram
+- url: "https://www.linkedin.com/in/abhik-ahuja/"
+  name: linkedin
+  icon: fab fa-linkedin-in

@@ -1,0 +1,12 @@
+- title: VRNeRFs
+  description: A VR Viewer for NVIDIA's InstantNGP (before they built their own).
+  url: "https://vanven99.github.io/cs184-sp22-nerfs/"
+  image: /assets/images/projects/abhikmono.gif
+- title: Self-hosting
+  description: I self-host several services on my personal linux server. They work <em>most</em> of the time, unless my power goes out or I'm too busy to fix things.
+  url: "https://dashboard.abhikahuja.com"
+  image: /assets/images/projects/linux.png
+- title: Uni
+  description: An iOS app to remove tracking parameters from URLs.
+  url: "https://github.com/origamiman72/uni"
+  image: /assets/images/projects/uni.png

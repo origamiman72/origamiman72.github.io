@@ -1,0 +1,63 @@
+designs:
+- name: Dragon Head
+  path: /assets/images/origami/dragonhead.jpg
+  description: Folded for my brother's high school graduation. Diagrams available in the EBOC 2023 Convention eBook.
+- name: Rhino
+  path: /assets/images/origami/rhino.jpg
+  description: Adapted from Oliver Jiang's Elephant. Diagrams available in the EBOC 2023 Convention eBook.
+- name: Squirrel (v1?)
+  path: /assets/images/origami/squirrel.jpeg
+  description: Work in progress squirrel. Folded from 7cm foil.
+- name: Yoda with sunglasses?
+  path: /assets/images/origami/yoda.jpg
+  description: Freefolded while procrastinating.
+
+folds:
+- name: Swan and Stellated Octahedron
+  path: /assets/images/origami/swan.jpg
+  description: by Eric Joisel and made of Sonobe units, respectively
+- name: Kawasaki Roses
+  path: /assets/images/origami/roses.jpg
+  description: Some roses of various sizes
+- name: Celtic Circle Tesselation
+  path: /assets/images/origami/celticcircle.jpg
+  description: by Robin Scholz. I was inspired to fold small tesselations by Kelly Tan (@origamifishh on instagram!)
+- name: Union Jack
+  path: /assets/images/origami/unionjack.jpg
+  description: by Mick Guy
+- name: Rose and Santa Cranes
+  path: /assets/images/origami/rosesantacranes.jpg
+  description: by Satoshi Kamiya and Arisawa Yuga, respectively
+- name: Circle Tesselation
+  path: /assets/images/origami/circletess.jpg
+  description: by Beth Johnson
+- name: Star Puff Tesselation
+  path: /assets/images/origami/starpuff.jpg
+  description: by Eric Gjerde
+- name: Bouncy Ball
+  path: /assets/images/origami/bouncyball.jpg
+  description: by Tom Hull; this is a fun model to play with!
+- name: Sun Hat
+  path: /assets/images/origami/sunhat.jpg
+  description: by Andrey Ermakov
+- name: Large Amogus and Magic Ball
+  path: /assets/images/origami/largeamogus.jpg
+  description: by Tadashi Mori and Yuri Shumakov, respectively
+- name: Amogus
+  path: /assets/images/origami/amogus.jpg
+  description: by Kei Morisue. Taught and folded at a Cal Origami Meeting
+- name: Celebration Crane
+  path: /assets/images/origami/receiptcrane.jpg
+  description: Traditional, shaping originally designed by Oliver Jiang. Folded from a receipt.
+- name: Zoom Logo
+  path: /assets/images/origami/zoomlogo.jpg
+  description: by Jeremy Shafer. Folded during the pandemic
+- name: Crane Bookmark
+  path: /assets/images/origami/cranebookmark.jpg
+  description: by Jo Nakashima
+- name: Pentagon Rose
+  path: /assets/images/origami/purplerose.jpg
+  description: by Naomiki Sato
+- name: Kawasaki Rose
+  path: /assets/images/origami/roses2.jpg
+  description: next to a real rose

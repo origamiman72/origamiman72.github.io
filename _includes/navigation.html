@@ -1,0 +1,19 @@
+<!-- Nav Bar -->
+<nav class="navbar">
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+    <div class="navbar-brand"><a href="/">Abhik Ahuja</a></div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+            {% for item in site.data.navigation %}
+            {% assign newlink = item.link | append: '.html' %}
+            <li class="nav-item"><a
+                    class="nav-link {% if page.url == item.link or page.url == newlink %} active {% endif %}"
+                    href="{{ item.link }}">
+                    {{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
