@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Abhik Ahuja - Projects
+title: Abhik Ahuja - Work
 ---
 <link rel="stylesheet" href="/assets/css/projects.css">
 
-# Projects
+# Work
 
 <div class="publications" markdown="1">
 

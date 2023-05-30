@@ -5,6 +5,10 @@
     margin-bottom: 30px;
 }
 
+.projects {
+    margin-bottom: 30px;
+}
+
 .project {
     display: flex;
     flex-flow: row;
@@ -39,3 +43,20 @@
 
 }
 
+@media only screen and (max-width: 850px) {
+    .project {
+        flex-flow: column;
+        .project-image {
+            display: flex;
+            flex-flow: row;
+            img {
+                margin: 0px auto;
+                width: 250px;
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+}

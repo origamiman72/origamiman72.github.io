@@ -5,15 +5,22 @@
             <span class="navbar-toggler-icon"></span>
         </button> -->
     <div class="navbar-brand"><a href="/">Abhik Ahuja</a></div>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav">
-            {% for item in site.data.navigation %}
-            {% assign newlink = item.link | append: '.html' %}
-            <li class="nav-item"><a
-                    class="nav-link {% if page.url == item.link or page.url == newlink %} active {% endif %}"
-                    href="{{ item.link }}">
-                    {{ item.name }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
+    <!-- icon from https://ryfarlane.com/article/animated-hamburger-menu-icon-to-x-close-icon-css -->
+    <a href="#" id="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </a>
+
+    <ul class="navbar-nav">
+        {% for item in site.data.navigation %}
+        {% assign newlink = item.link | append: '.html' %}
+        <li class="nav-item"><a
+                class="nav-link {% if page.url == item.link or page.url == newlink %} active {% endif %}"
+                href="{{ item.link }}">
+                {{ item.name }}</a></li>
+        {% endfor %}
+    </ul>
 </nav>
+
+<script src="/assets/js/navbar.js"></script>

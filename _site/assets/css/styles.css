@@ -1,4 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=Inconsolata&family=PT+Serif&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&family=Source+Sans+Pro:wght@400;600&family=Space+Mono&display=swap");
+nav {
+  background-color: #FAFFFD;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  letter-spacing: 0.02em;
+  transition: 0.2s ease-out;
+  margin-bottom: 20px;
+}
+nav .navbar-brand {
+  font-family: "Bitter";
+  font-size: 1.2em;
+  font-weight: 500;
+}
+nav .navbar-brand a {
+  color: #0d0f73;
+}
+nav .navbar-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+nav .navbar-nav .nav-item {
+  margin: 0px 15px;
+  padding: 5px 5px;
+}
+nav .navbar-nav .active {
+  color: #0d0f73;
+}
+
+a#menu-icon {
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+a#menu-icon .bar {
+  margin: 4px;
+  width: 25px;
+  height: 2px;
+  background: #0d0f73;
+  border-radius: 1.5px;
+  transition: margin 0.2s, transform 0.2s ease-in-out;
+  /* same as above but with prefixes added */
+  -webkit-transition: margin 0.2s, -webkit-transform 0.2s ease-in-out;
+  transition: margin 0.2s, -webkit-transform 0.2s ease-in-out;
+  -o-transition: margin 0.2s, transform 0.2s ease-in-out;
+  transition: margin 0.2s, transform 0.2s ease-in-out;
+  transition: margin 0.2s, transform 0.2s, -webkit-transform 0.2s ease-in-out;
+}
+a#menu-icon .bar:nth-child(2) {
+  transition: 0.2s;
+  opacity: 100;
+}
+a#menu-icon.close .bar:first-child {
+  -webkit-transform: translateY(6px) rotate(45deg);
+  -ms-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+}
+a#menu-icon.close .bar:nth-child(2) {
+  transition: 0.2s;
+  opacity: 0;
+}
+a#menu-icon.close .bar:last-child {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+  -ms-transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media only screen and (min-width: 850px) {
+  a#menu-icon {
+    display: none;
+  }
+  nav {
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  nav {
+    flex-flow: column !important;
+    height: 100%;
+    max-height: 50px;
+  }
+  nav.close {
+    max-height: 270px;
+    justify-content: start;
+  }
+  nav.close .navbar-nav {
+    display: flex;
+    flex-flow: column !important;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  nav .navbar-brand {
+    margin: 20px auto;
+  }
+  nav .navbar-nav {
+    display: none;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
 html {
   background-color: #FAFFFD;
   color: rgb(54, 54, 54);
@@ -17,6 +129,7 @@ html .wrapper {
   flex-flow: column;
   min-height: 100vh;
   justify-content: flex-start;
+  overflow: hidden;
 }
 html .container {
   max-width: 1200px;
@@ -34,34 +147,9 @@ html body {
   margin: 0px;
   min-height: 100vh;
 }
-html nav {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 20px;
-  letter-spacing: 0.02em;
-  margin-bottom: 20px;
-}
-html nav .navbar-brand {
-  font-family: "Bitter";
-  font-size: 1.2em;
-  font-weight: 500;
-}
-html nav .navbar-brand a {
-  color: #0d0f73;
-}
-html nav .navbar-nav {
-  display: flex;
-  flex-flow: row nowrap;
-  list-style: none;
-}
-html nav .navbar-nav .nav-item {
-  margin: 0px 15px;
-  padding: 5px 5px;
-}
-html nav .navbar-nav .active {
-  color: #0d0f73;
+html main {
+  padding-top: 80px;
+  box-sizing: border-box;
 }
 html .accent {
   color: #0d0f73;
@@ -105,13 +193,16 @@ html footer .footer-text p {
 html footer .icons {
   font-size: 30px;
   margin-bottom: 10px;
+  display: flex;
+  flex-flow: row nowrap;
 }
 html footer .icons a {
   text-decoration: none;
+  margin: 0px 7px;
 }
 html footer .icons .icon {
   color: rgb(54, 54, 54);
-  margin: 0px 5px;
+  color: rgb(82, 82, 82);
 }
 html footer .icons .icon:hover {
   color: #0d0f73;
@@ -166,7 +257,6 @@ a.no-line::after {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   transition: 0.5s ease;
-  margin: 5px 0px;
   border: 0.5rem solid white;
   overflow: hidden;
   box-sizing: border-box;
@@ -219,6 +309,12 @@ a.no-line::after {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 850px) {
+  h1,
+  h2 {
+    text-align: center;
   }
 }
 

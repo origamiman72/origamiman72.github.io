@@ -1,12 +1,10 @@
 - name: Home
   link: /
-- name: Projects
-  link: /projects
+- name: Work
+  link: /work
 - name: Origami
   link: /origami
 - name: Photography
   link: /photography
-# - name: Services
-#   link: https://dashboard.abhikahuja.com
 - name: CV
   link: /resume

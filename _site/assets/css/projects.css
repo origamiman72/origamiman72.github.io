@@ -2,6 +2,10 @@
   margin-bottom: 30px;
 }
 
+.projects {
+  margin-bottom: 30px;
+}
+
 .project {
   display: flex;
   flex-flow: row;
@@ -28,6 +32,23 @@
   font-size: 0.9em;
   font-style: italic;
   margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+  .project {
+    flex-flow: column;
+  }
+  .project .project-image {
+    display: flex;
+    flex-flow: row;
+  }
+  .project .project-image img {
+    margin: 0px auto;
+    width: 250px;
+  }
+  h1 {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,142 @@
+@import "colors";
+
+nav {
+    background-color: $backgroundcolor;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    letter-spacing: .02em;
+    transition: .2s ease-out;
+
+    .navbar-brand {
+        font-family: $titlefont;
+        font-size: 1.2em;
+        font-weight: 500;
+
+        a {
+            color: $accentcolor;
+        }
+    }
+
+    margin-bottom: 20px;
+
+    .navbar-nav {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+
+        .nav-item {
+            margin: 0px 15px;
+            padding: 5px 5px;
+        }
+
+        .active {
+            color: $accentcolor;
+        }
+    }
+}
+
+a#menu-icon {
+    display: inline-block;
+    // padding: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+    .bar {
+        margin: 4px;
+        width: 25px;
+        height: 2px;
+        background: $accentcolor;
+        border-radius: 1.5px;
+
+        transition: margin 0.2s, transform 0.2s ease-in-out;
+
+        /* same as above but with prefixes added */
+        -webkit-transition: margin 0.2s, -webkit-transform 0.2s ease-in-out;
+        transition: margin 0.2s, -webkit-transform 0.2s ease-in-out;
+        -o-transition: margin 0.2s, transform 0.2s ease-in-out;
+        transition: margin 0.2s, transform 0.2s ease-in-out;
+        transition: margin 0.2s, transform 0.2s, -webkit-transform 0.2s ease-in-out;
+
+        &:nth-child(2) {
+            transition: .2s;
+            opacity: 100;
+        }
+
+    }
+
+    &.close {
+        .bar {
+            &:first-child {
+                -webkit-transform: translateY(6px) rotate(45deg);
+                -ms-transform: translateY(6px) rotate(45deg);
+                transform: translateY(6px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                transition: .2s;
+                opacity: 0;
+            }
+
+            &:last-child {
+                -webkit-transform: translateY(-6px) rotate(-45deg);
+                -ms-transform: translateY(-6px) rotate(-45deg);
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 850px) {
+    a#menu-icon {
+        display: none;
+    }
+
+    nav {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    nav {
+        flex-flow: column !important;
+        height: 100%;
+        max-height: 50px;
+
+        &.close {
+            max-height: 270px;
+            justify-content: start;
+
+            .navbar-nav {
+                display: flex;
+                flex-flow: column !important;
+                overflow: hidden;
+                margin-bottom: 10px;
+            }
+        }
+
+        .navbar-brand {
+            margin: 20px auto;
+        }
+
+        .navbar-nav {
+            display: none;
+            text-align: center;
+            padding-left: 0px;
+        }
+    }
+
+}

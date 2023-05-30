@@ -8,6 +8,7 @@
 .banner {
     width: 100%;
     padding: 0px 20px;
+    margin-top: 20px;
     box-sizing: border-box;
 }
 
@@ -20,20 +21,62 @@
 
 .row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
 }
 
 .left {
     padding: 20px;
     align-self: start;
 
+    .center {
+        margin-top: -80px;
+    }
+
     .profile-pic {
         max-width: 200px;
         border-radius: 50%;
+        border: 4px solid $backgroundcolor;
     }
 
 }
 
 .right {
     padding: 20px;
+    // max-width: 910px;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .banner {
+        margin-top: 10px;
+    }
+
+    .row {
+        flex-flow: column;
+
+        .left {
+            display: flex;
+            box-sizing: border-box;
+            flex-flow: row;
+            width: 100%;
+
+            .center {
+                margin: auto;
+                margin-top: -150px;
+
+                .profile-pic {
+                    width: 180px;
+                }
+            }
+        }
+
+        .right {
+            padding-top: 0px;
+
+            .title {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
 }
