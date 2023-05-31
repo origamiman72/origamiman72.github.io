@@ -1,0 +1,20 @@
+<!-- Footer -->
+<footer>
+    <div class="footer-items col center">
+        <!-- <h2 class="contactTitle">Contact Me</h2> -->
+        <div class="icons row center">
+            {% for item in site.data.links.links %}
+            <a href="{{ item.url }}">
+                <i class="icon {{ item.icon }}"></i>
+            </a>
+
+            {% endfor %}
+        </div>
+        <div class="footer-text">
+            <p> © 2023 Abhik Ahuja </p>
+        </div>
+        <div class="footer-text">
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+</footer>

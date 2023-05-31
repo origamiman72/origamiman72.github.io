@@ -1,0 +1,28 @@
+---
+---
+
+.grid-item {
+    max-width: 300px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: .5s ease;
+    border: 8px solid white;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    a {
+        max-width: 284px !important;
+
+        img {
+            max-width: 284px;
+            overflow: hidden;
+            transition: 1s ease;
+        }
+    }
+
+}
+
+.grid {
+    margin: auto;
+}

@@ -34,6 +34,7 @@
         .project-authors {
             font-size: .90em;
         }
+
         .project-venue {
             font-size: .90em;
             font-style: italic;
@@ -46,13 +47,19 @@
 @media only screen and (max-width: 850px) {
     .project {
         flex-flow: column;
+
         .project-image {
             display: flex;
             flex-flow: row;
+
             img {
                 margin: 0px auto;
                 width: 250px;
             }
+        }
+
+        .project-text {
+            padding: 15px 0px;
         }
     }
 

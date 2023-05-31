@@ -47,16 +47,13 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="https://kit.fontawesome.com/31fdf04205.js" crossorigin="anonymous"></script>
 
-    <!-- Scripts -->
-
-
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
     <div class="wrapper" />
 
     <header>
-        {% include navigation.html %}
+        {% include navbar.html %}
     </header>
     <main>
         <div class="container fade-in">
@@ -64,26 +61,8 @@
         </div>
     </main>
 
-    <!-- Footer (TODO: add contact/links) -->
-    <footer>
-        <div class="footer-items col center">
-            <!-- <h2 class="contactTitle">Contact Me</h2> -->
-            <div class="icons row center">
-                {% for item in site.data.links.links %}
-                <a href="{{ item.url }}">
-                    <i class="icon {{ item.icon }}"></i>
-                </a>
+    {% include footer.html %}
 
-                {% endfor %}
-            </div>
-            <div class="footer-text">
-                <p> © 2023 Abhik Ahuja </p>
-            </div>
-            <div class="footer-text">
-                <a href="privacy.html">Privacy Policy</a>
-            </div>
-        </div>
-    </footer>
     </div>
 </body>
 

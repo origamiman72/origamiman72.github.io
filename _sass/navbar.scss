@@ -20,6 +20,11 @@ nav {
         font-size: 1.2em;
         font-weight: 500;
 
+        img {
+            height: 30px;
+            margin-top: 10px;
+        }
+
         a {
             color: $accentcolor;
         }
@@ -114,28 +119,29 @@ a#menu-icon {
     nav {
         flex-flow: column !important;
         height: 100%;
-        max-height: 50px;
+        max-height: 60px;
+        justify-content: start;
 
         &.close {
             max-height: 270px;
-            justify-content: start;
-
-            .navbar-nav {
-                display: flex;
-                flex-flow: column !important;
-                overflow: hidden;
-                margin-bottom: 10px;
-            }
         }
 
         .navbar-brand {
             margin: 20px auto;
+
+            img {
+                height: 25px;
+                margin-top: 0px;
+            }
         }
 
         .navbar-nav {
-            display: none;
             text-align: center;
             padding-left: 0px;
+            display: flex;
+            flex-flow: column !important;
+            overflow: hidden;
+            margin-bottom: 0px;
         }
     }
 
