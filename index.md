@@ -21,7 +21,7 @@ title: Abhik Ahuja
    </p>
 
    <p markdown="1">
-   Aside from computer science, I am also interested in [origami](/origami), [photography](/photography), [Rubik's cubes](https://www.worldcubeassociation.org/persons/2015AHUJ01), vegan cooking, public transportation, mechanical keyboards, and [more](/other). Feel free to reach out if you want talk about any of those, or for any other reason!
+   Aside from computer science, I am also interested in [origami](/origami), [photography](/photography), [Rubik's cubes](https://www.worldcubeassociation.org/persons/2015AHUJ01), vegan cooking, public transportation, mechanical keyboards, and [more](/other). Feel free to reach out if you want to talk about any of those, or for any other reason!
    </p>
 
    <p markdown="1">
