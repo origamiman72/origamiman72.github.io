@@ -1,7 +1,7 @@
 - title: Instruct-NeRF2NeRF4D
   description: Text-guided editing of 4D (dynamic) NeRF models. Uses iterative dataset updates by a 2D Diffusion model to gradually edit a dynamic NeRF
   url: "https://nextcloud.abhikahuja.com/s/NyJt7KoEkiL5rqZ"
-  image: /assets/images/projects/in2n4d.jpg
+  image: /assets/images/projects/in2n4d.gif
 - title: CUT-Video
   description: Contrastive Unpaired Translation for Video-to-Video translation. Uses Generative Adversarial Networks (GANs) to translate image frames with an additional loss to encourage temporal consistency
   url: "https://nextcloud.abhikahuja.com/s/qGcR9fL6qDQGtmH"
