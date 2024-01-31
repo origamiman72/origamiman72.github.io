@@ -38,6 +38,7 @@ html {
         justify-content: center;
         flex-grow: 1;
         margin: auto;
+        padding-bottom: 20px;
     }
 
     h1,
@@ -109,6 +110,7 @@ html {
         &:hover {
             filter: brightness(80%);
             transition: .25s ease-out;
+            cursor: pointer;
         }
     }
 

@@ -1,0 +1,101 @@
+---
+---
+@import "colors";
+
+#snake-game {
+    flex-grow: 0;
+    width: 360px;
+    height: 360px;
+    border: 3px solid $footermaincolor;
+    border-radius: 3px;
+}
+
+.game-top-bar {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 360px;
+
+    .scores {
+        font-size: small;
+
+        h2 {
+            margin: 5px 0px;
+            text-align: left;
+        }
+    }
+
+    a {
+        margin-top: 10px;
+        font-size: xx-large;
+        padding-bottom: 5px;
+    }
+}
+
+.overlay-screen {
+    transition: .4s ease;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    transform: translateY(-369px) translateX(3px);
+    border-radius: 3px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    cursor: pointer;
+
+    opacity: 0;
+
+    a {
+        color: $accentcolor;
+        text-align: center;
+        align-items: center;
+        margin: 0px auto;
+        opacity: 0;
+        transition: .2s ease;
+
+        .overlay-text {
+            transition: .2s ease;
+            font-family: $titlefont;
+            margin-bottom: 15px;
+            font-size: xx-large;
+        }
+
+        i {
+            transition: .2s ease;
+            font-size: 200px;
+            padding-bottom: 5px;
+
+        }
+
+        &::after {
+            color: $accentcolor;
+        }
+    }
+
+
+
+    &.visible {
+        background: rgba($backgroundcolor, 0.5);
+        opacity: 100;
+
+        a {
+            opacity: 100;
+
+            .overlay-text {
+                font-family: $titlefont;
+                margin-bottom: 15px;
+                font-size: x-large;
+
+                &.large-text {
+                    font-size: xx-large;
+                }
+            }
+
+            i {
+                font-size: 50px;
+            }
+        }
+    }
+}
