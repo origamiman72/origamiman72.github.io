@@ -30,7 +30,7 @@ title: Abhik Ahuja - Work
 
 <div class="projects" markdown="1">
 
-## Selected Projects
+## Some Projects
 {% for item in site.data.projects %}
 <div class="project">
 

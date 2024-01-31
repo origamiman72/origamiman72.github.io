@@ -2,6 +2,11 @@
 ---
 @import "colors";
 
+.description-text {
+    max-width: 360px;
+}
+
+
 #snake-game {
     flex-grow: 0;
     width: 360px;

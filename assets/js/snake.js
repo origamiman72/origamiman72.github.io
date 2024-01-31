@@ -1,21 +1,22 @@
 var canvas, ctx;
 
-const gridSize = 20;
+var gridSize = 20;
 
 // Colors
-const boardColor = "#ffffff";
+var boardColor = "#ffffff";
 const snakeColor = "#0d0f73";
 const flashColor = snakeColor;
 const appleColor = "#FB8B24";
 
 // TODO:
-// easterEggThreshold = 10;
+easterEggThreshold = 50;
 
 // Util
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
+// Classes
 class Position {
     constructor(x, y) {
         this.x = mod(x, gridSize);
@@ -83,6 +84,7 @@ var highScore;
 var applePosition;
 var gameState;
 
+// Game State
 const showPauseScreen = () => {
     document.getElementById("pause-screen").classList.add("visible");
     document.getElementById("top-pause-button").classList.add("active");
@@ -93,9 +95,24 @@ const hidePauseScreen = () => {
     document.getElementById("top-pause-button").classList.remove("active");
 }
 
-function fillBoard(color) {
-    ctx.fillStyle = color;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+function togglePause() {
+    if (gameState == GameStates.Playing) {
+        pauseGame();
+    } else {
+        unPause();
+    }
+}
+
+function pauseGame() {
+    gameState = GameStates.Paused;
+    showPauseScreen();
+}
+
+function unPause() {
+    if (gameState == GameStates.Paused) {
+        gameState = GameStates.Playing;
+        hidePauseScreen();
+    }
 }
 
 function startGame() {
@@ -127,40 +144,24 @@ function resetGame() {
     }, 600);
 
     // Looks kinda cool idk
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 5; i++) {
         setTimeout(() => {
             startGame();
-        }, 800 + i * 50);
-    }
-}
-
-function togglePause() {
-    if (gameState == GameStates.Playing) {
-        pauseGame();
-    } else {
-        unPause();
-    }
-}
-
-function pauseGame() {
-    gameState = GameStates.Paused;
-    showPauseScreen();
-}
-
-function unPause() {
-    if (gameState == GameStates.Paused) {
-        gameState = GameStates.Playing;
-        hidePauseScreen();
+        }, 800 + i * 100);
     }
 }
 
 function runGame() {
     if (gameState == GameStates.Playing) {
+        // if (score > easterEggThreshold) {
+        //     easterEgg();
+        // }
         doGameTick();
         drawGame();
     }
 }
 
+// Game logic
 function doGameTick() {
     var newHead = snake.getNewHead();
 
@@ -192,33 +193,7 @@ function spawnApple() {
     } while (snake.checkCollision(applePosition));
 }
 
-function updateScore() {
-    document.getElementById("score").innerHTML = score;
-    if (score > highScore) {
-        highScore = score;
-        localStorage.setItem("highScore", highScore);
-    }
-    document.getElementById("high-score").innerHTML = highScore;
-}
-
-function drawGame() {
-    fillBoard(boardColor);
-
-    snake.draw();
-    drawTile(appleColor, applePosition.x, applePosition.y);
-}
-
-function drawTile(color, x, y) {
-    const tileSize = canvas.width / gridSize;
-
-    ctx.fillStyle = color;
-    ctx.strokeStyle = boardColor;
-    ctx.fillRect(tileSize * x, tileSize * y, tileSize, tileSize);
-    ctx.strokeRect(tileSize * x, tileSize * y, tileSize, tileSize);
-}
-
 function handleKey(e) {
-    e.preventDefault();
     switch (e.keyCode) {
         case Keys.H:
             currDir = Direction.Left;
@@ -237,6 +212,55 @@ function handleKey(e) {
             unPause();
             break;
     }
+}
+
+// Drawing 
+function fillBoard(color) {
+    ctx.fillStyle = color;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+function drawGame() {
+    fillBoard(boardColor);
+
+    snake.draw();
+    drawTile(appleColor, applePosition.x, applePosition.y);
+}
+
+function drawTile(color, x, y) {
+    const tileSize = canvas.width / gridSize;
+
+    ctx.fillStyle = color;
+    ctx.strokeStyle = boardColor;
+    ctx.fillRect(tileSize * x, tileSize * y, tileSize, tileSize);
+    ctx.strokeRect(tileSize * x, tileSize * y, tileSize, tileSize);
+}
+
+function updateScore() {
+    document.getElementById("score").innerHTML = score;
+    if (score > highScore) {
+        highScore = score;
+        localStorage.setItem("highScore", highScore);
+    }
+    document.getElementById("high-score").innerHTML = highScore;
+}
+
+function easterEgg() {
+    const tileSize = canvas.width / gridSize;
+    let widthDiff = screen.width - canvas.width;
+    let heightDiff = screen.height - canvas.height;
+    canvas.width = screen.width;
+    canvas.height = screen.height;
+    gridSize = canvas.width / tileSize;
+
+    snake.trail = snake.trail.map(pos => new Position(pos.x + widthDiff, pos.y + heightDiff));
+    applePosition = new Position(applePosition.x + widthDiff, applePosition.y + heightDiff);
+    canvas.style.width = screen.width + "px";
+    canvas.style.height = screen.height + "px";
+    canvas.style.position = "fixed";
+    canvas.style.top = "0px";
+    canvas.style.left = "0px";
+    boardColor = "rgba(0, 0, 0, 0)";
 }
 
 window.onload = function () {

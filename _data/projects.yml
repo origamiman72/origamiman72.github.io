@@ -1,3 +1,11 @@
+- title: Instruct-NeRF2NeRF4D
+  description: Text-guided editing of 4D (dynamic) NeRF models. Uses iterative dataset updates by a 2D Diffusion model to gradually edit a dynamic NeRF
+  url: "https://nextcloud.abhikahuja.com/s/NyJt7KoEkiL5rqZ"
+  image: /assets/images/projects/in2n4d.jpg
+- title: CUT-Video
+  description: Contrastive Unpaired Translation for Video-to-Video translation. Uses Generative Adversarial Networks (GANs) to translate image frames with an additional loss to encourage temporal consistency
+  url: "https://nextcloud.abhikahuja.com/s/qGcR9fL6qDQGtmH"
+  image: /assets/images/projects/cutv.gif
 - title: VRNeRFs
   description: A VR Viewer for NVIDIA's InstantNGP (before they built their own).
   url: "https://vanven99.github.io/cs184-sp22-nerfs/"
@@ -10,3 +18,7 @@
   description: An iOS app to remove tracking parameters from URLs.
   url: "https://github.com/origamiman72/uni"
   image: /assets/images/projects/uni.png
+- title: Snake
+  description: Just a snake game for practicing vim keybinds.
+  url: "/snake"
+  image: /assets/images/projects/snake.jpeg

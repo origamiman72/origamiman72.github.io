@@ -6,8 +6,13 @@ title: Abhik Ahuja - Snake
 
 # Snake
 
+<div class="description-text" markdown="1">
 A simple snake game using vim controls.     
-Use **HJKL** to move.
+Use **HJKL** to move.     
+
+Make sure plugins such as [Vimium](https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/) are disabled before playing. Not mobile compatible unless you have a hardware keyboard, for some reason.     
+[Code](https://github.com/origamiman72/origamiman72.github.io/blob/master/assets/js/snake.js)
+</div>
 
 <link href="/assets/css/snake.css" rel="stylesheet" />
 <div class="game-top-bar">
