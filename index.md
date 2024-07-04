@@ -17,7 +17,7 @@ title: Abhik Ahuja
    <h1 class="title">Hi! I'm <span class="accent">Abhik Ahuja</span>.</h1>
 
    <p markdown="1">
-   I'm a software engineer at [Zoox](https://zoox.com/) working on 3D reconstruction. I am also finishing my M.Phil studying 3D Computer Vision at the [University of Cambridge](https://www.cst.cam.ac.uk/) under the supervision of [Professor Rafał Mantiuk](https://www.cl.cam.ac.uk/~rkm38/). I am particularly interested in problems relating to 3D vision and computational photography. Previously, I studied at [UC Berkeley](https://cs.berkeley.edu/) with a double major in Computer Science and Mathematics. There, I worked with [Professor Angjoo Kanazawa](https://people.eecs.berkeley.edu/~kanazawa/) and [Matthew Tancik](https://matthewtancik.com) on visual computing projects such as [Nerfstudio](https://nerf.studio). I have previously interned at Amazon, where I worked on backend infrastructure.
+   I'm a software engineer at [Zoox](https://zoox.com/) working on 3D reconstruction. I recently finished an M.Phil focusing on 3D Computer Vision at the [University of Cambridge](https://www.cst.cam.ac.uk/) under the supervision of [Professor Rafał Mantiuk](https://www.cl.cam.ac.uk/~rkm38/). Before that, I graduated from [UC Berkeley](https://cs.berkeley.edu/) with a double major in Computer Science and Mathematics. There, I worked with [Professor Angjoo Kanazawa](https://people.eecs.berkeley.edu/~kanazawa/) and [Matthew Tancik](https://matthewtancik.com) on visual computing projects such as [Nerfstudio](https://nerf.studio). I have previously interned at Amazon, where I worked on backend infrastructure.
    </p>
 
    <p markdown="1">
