@@ -34,6 +34,9 @@ folds:
 - name: Star Puff Tesselation
   path: /assets/images/origami/starpuff.jpg
   description: by Eric Gjerde
+- name: Pinwheel Forest Tesselation
+  path: /assets/images/origami/pinwheelforest.jpeg
+  description: by Madonna Yoder
 - name: Bouncy Ball
   path: /assets/images/origami/bouncyball.jpg
   description: by Tom Hull; this is a fun model to play with!
