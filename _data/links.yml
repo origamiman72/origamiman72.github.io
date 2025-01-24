@@ -10,9 +10,6 @@ links:
 - url: "https://mathstodon.xyz/@origamiman72"
   name: "mastodon"
   icon: fab fa-mastodon
-- url: "https://instagram.com/abhiktakespictures"
-  name: instagram
-  icon: fab fa-instagram
 - url: "https://www.linkedin.com/in/abhik-ahuja/"
   name: linkedin
   icon: fab fa-linkedin-in

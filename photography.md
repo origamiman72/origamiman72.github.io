@@ -4,7 +4,7 @@ title: Abhik Ahuja - Photography
 images: "/assets/images/photography"
 ---
 # Photography
-I enjoy exploring and taking pictures of landscapes and cities. I primarily shoot on a Nikon D3300 with the 18-55mm kit lens, but some of the pictures below were taken on my phone. I also post some of these on my [instagram]({{ site.data.links.instagram }}).
+I enjoy exploring and taking pictures of landscapes and cities. I shoot on a Nikon D3300, but more recently I primarily use my phone.
 
 <link rel="stylesheet" href="/assets/css/portfolio.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
