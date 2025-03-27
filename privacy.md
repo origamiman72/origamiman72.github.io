@@ -26,7 +26,6 @@ title: Abhik Ahuja - Privacy Policy
 
 <ul>
     <li>Keep track of the number of visitors to our site.</li>
-    <li>Keep track of a user's high score in the <a href="snake.html">snake game</a></li>
 </ul>
 
 <h2>Log Files</h2>
