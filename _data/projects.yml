@@ -1,3 +1,7 @@
+- title: EnvGaussians
+  description: Improving large scene reconstruction in 3D Gaussian Splatting using an environment map.
+  url: "https://nextcloud.abhikahuja.com/s/bHFnDqyHoG7XLqM"
+  image: /assets/images/projects/envgaussians.jpeg
 - title: Instruct-NeRF2NeRF4D
   description: Text-guided editing of 4D (dynamic) NeRF models. Uses iterative dataset updates by a 2D Diffusion model to gradually edit a dynamic NeRF
   url: "https://nextcloud.abhikahuja.com/s/NyJt7KoEkiL5rqZ"
