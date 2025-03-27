@@ -5,20 +5,26 @@ designs:
 - name: Rhino
   path: /assets/images/origami/rhino.jpg
   description: Adapted from Oliver Jiang's Elephant. Diagrams available in the EBOC 2023 Convention eBook.
-- name: Grinnell (Diving Falcon)
-  path: /assets/images/origami/grinnell.jpeg
-  description: In homage to UC Berkeley's late falcon. Diagrams available in the EBOC 2025 Convention (e)Book.
-- name: Squirrel (v1?)
-  path: /assets/images/origami/squirrel.jpeg
-  description: Work in progress squirrel. Folded from 7cm foil.
 - name: Yoda with sunglasses?
   path: /assets/images/origami/yoda.jpg
   description: Freefolded while procrastinating.
+- name: Grinnell (Diving Falcon)
+  path: /assets/images/origami/grinnell.jpeg
+  description: In homage to UC Berkeley's late falcon. Diagrams available in the EBOC 2025 Convention (e)Book.
+- name: Shrek?
+  path: /assets/images/origami/shrek.jpg
+  description: Well it was supposed to be anyway.
+- name: Squirrel (v1?)
+  path: /assets/images/origami/squirrel.jpeg
+  description: Work in progress squirrel. Folded from 7cm foil.
 
 folds:
 - name: Swan and Stellated Octahedron
   path: /assets/images/origami/swan.jpg
   description: by Eric Joisel and made of Sonobe units, respectively
+- name: Square Interlace Box
+  path: /assets/images/origami/squareinterlace.jpeg
+  description: by Michał Kosmulski
 - name: Kawasaki Roses
   path: /assets/images/origami/roses.jpg
   description: Some roses of various sizes
