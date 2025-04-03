@@ -25,6 +25,15 @@ folds:
 - name: Square Interlace Box
   path: /assets/images/origami/squareinterlace.jpeg
   description: by Michał Kosmulski
+- name: Waves Tessellation
+  path: /assets/images/origami/wavesilan.jpeg
+  description: by Ilan Garibi
+- name: Fiery Dragon
+  path: /assets/images/origami/smolfiery.jpeg
+  description: by Kade Chan
+- name: Pinwheel Forest Tesselation
+  path: /assets/images/origami/pinwheelforest.jpeg
+  description: by Madonna Yoder, made during the 2024 Advent of Tess
 - name: Kawasaki Roses
   path: /assets/images/origami/roses.jpg
   description: Some roses of various sizes
@@ -43,9 +52,6 @@ folds:
 - name: Star Puff Tesselation
   path: /assets/images/origami/starpuff.jpg
   description: by Eric Gjerde
-- name: Pinwheel Forest Tesselation
-  path: /assets/images/origami/pinwheelforest.jpeg
-  description: by Madonna Yoder
 - name: Bouncy Ball
   path: /assets/images/origami/bouncyball.jpg
   description: by Tom Hull; this is a fun model to play with!
