@@ -6,7 +6,7 @@ title: Blog
 
 # Latest Posts
 
-I just started a blog!
+I just started a blog! You can subscribe to it via [RSS](/feed.xml).
 
 <ol>
   {% for post in site.posts %}

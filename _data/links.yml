@@ -13,3 +13,6 @@ links:
 - url: "https://www.linkedin.com/in/abhik-ahuja/"
   name: linkedin
   icon: fab fa-linkedin-in
+- url: "/feed.xml"
+  name: "rss"
+  icon: fa fa-rss-square
