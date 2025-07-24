@@ -1,10 +1,12 @@
 - name: Home
   link: /
-- name: Work
-  link: /work
+- name: Blog
+  link: /blog
 - name: Origami
   link: /origami
 - name: Photography
   link: /photography
+- name: Work
+  link: /work
 - name: CV
   link: /resume

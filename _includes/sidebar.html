@@ -1,0 +1,16 @@
+<!-- Posts Sidebar -->
+<div class="sidebar">
+    <h2>Recent Posts</h2>
+    <ol class="sidebar-list">
+        {% for post in site.posts %}
+        <li class="sidebar-post">
+            <a class="{% if page.url == post.url or page.url == newlink %} active {% endif %} sidebar-post-title"
+                href="{{ post.url }}">{{
+                post.title}} </a>
+            <div class="sidebar-post-date">
+                {{ post.date | date_to_string }}
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
+</div>

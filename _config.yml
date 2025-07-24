@@ -1,2 +1,5 @@
 title: "Abhik Ahuja"
 author: "Abhik Ahuja"
+
+plugins:
+  - jekyll-feed

@@ -258,6 +258,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 228)
+  jekyll-feed
 
 BUNDLED WITH
    2.4.22

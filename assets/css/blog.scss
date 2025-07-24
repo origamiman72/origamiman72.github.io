@@ -1,0 +1,21 @@
+---
+---
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.post {
+    margin-bottom: 30px;
+    h2 {
+        margin-bottom: 5px;
+    }
+    .post-date {
+        font-weight: bolder;
+        margin-bottom: 7px;
+    }
+    p {
+        margin-top: 5px;
+    }
+}

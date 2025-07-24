@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="/assets/css/post.css">
+
+<div class="post-container">
+    {% include sidebar.html %}
+    <div class="post">
+        <h1>{{ page.title }}</h1>
+        <div class="post-date">{{ page.date | date_to_string }}</div>
+
+        {{ content }}
+    </div>
+</div>

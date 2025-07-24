@@ -1,0 +1,89 @@
+---
+---
+@import "colors";
+
+.sidebar {
+    width: 18%;
+    border-right: 2px solid $footercolor;
+    margin-right: 50px;
+    padding-right: 25px;
+    min-width: 300px;
+    max-width: 420px;
+    overflow: hidden;
+
+    .sidebar-list {
+        list-style-type: none;
+        padding: 0;
+
+        .sidebar-post {
+            margin-bottom: 10px;
+            text-overflow: ellipsis;
+            max-width: 90%;
+
+            .sidebar-post-title {
+                display: block;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                width: fit-content;
+            }
+
+            .active {
+                color: $accentcolor;
+            }
+
+            .sidebar-post-date {
+                font-size: small;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .sidebar {
+        display: none;
+    }
+
+    .post-date {
+        text-align: center;
+    }
+}
+
+
+.post-container {
+    display: flex;
+    flex-flow: row;
+
+    .post {
+        h1 {
+            line-height: 1.3;
+        }
+
+        .post-date {
+            font-weight: bolder;
+        }
+        .post-image {
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+            margin: 20px 0px 20px 0px;
+            
+            .image-container {
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 15px;
+
+                img {
+                    max-width: 420px;
+                    max-height: 300px;
+                }
+            }
+        }
+    }
+
+}
