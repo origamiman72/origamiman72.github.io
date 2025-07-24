@@ -2,6 +2,9 @@
 layout: default
 ---
 <link rel="stylesheet" href="/assets/css/post.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="/assets/css/lightbox.css" rel="stylesheet" />
+
 
 <div class="post-container">
     {% include sidebar.html %}
@@ -10,5 +13,26 @@ layout: default
         <div class="post-date">{{ page.date | date_to_string }}</div>
 
         {{ content }}
+
+        <div class="comment-message">
+            <em>Any comments? Feel free to email me at </em>
+            <span class="accent bold">{{ site.data.links.email }}</span>
+            <em>or comment using giscus!</em>
+        </div>
+
+        <script src="https://giscus.app/client.js" data-repo="origamiman72/blog-comments" data-repo-id="R_kgDOPR7RTw"
+            data-category="Announcements" data-category-id="DIC_kwDOPR7RT84CtW3r" data-mapping="pathname"
+            data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
+            data-theme="light" data-lang="en" crossorigin="anonymous" async>
+            </script>
     </div>
 </div>
+
+<script src="/assets/js/lightbox.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'imageFadeDuration': 300,
+        'wrapAround': true
+    })
+</script>
