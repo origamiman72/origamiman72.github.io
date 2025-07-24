@@ -9,3 +9,5 @@ My personal website, accessible from [abhikahuja.com](https://abhikahuja.com) or
 * jQuery
 * masonry.js
 * Lightbox2
+* jekyll
+* jekyll-feed
