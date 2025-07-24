@@ -4,7 +4,7 @@ title: Blog
 ---
 <link rel="stylesheet" href="/assets/css/blog.css">
 
-# Latest Posts
+# Recent Posts
 
 I just started a blog! You can subscribe to it via [RSS](/feed.xml).
 
