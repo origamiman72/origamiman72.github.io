@@ -3,12 +3,11 @@
 @import "colors";
 
 .sidebar {
-    width: 18%;
     border-right: 2px solid $footercolor;
     margin-right: 50px;
     padding-right: 25px;
-    min-width: 300px;
-    max-width: 420px;
+    min-width: 250px;
+    max-width: 250px;
     overflow: hidden;
 
     .sidebar-list {
